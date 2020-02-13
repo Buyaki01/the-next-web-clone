@@ -111,8 +111,41 @@ main{
     background-color: fuchsia;
 }
 
+.articles{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 250px) 150px;
+}
+
+.articles img{
+    width: 100%;
+    height:100%;
+}
+
+.articles .article-one{
+    grid-column: 1;
+    grid-row: 1/ span 2;
+}
+
+.article-one img{
+    height: 500px;
+}
+
+
+.articles .article-two{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.articles .article-three{
+    grid-column: 2;
+    grid-row: 2;    
+}
+
+
 footer{
     width: 100%;
     height: 200px;
     background-color: hotpink;
 }
+
