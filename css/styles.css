@@ -72,7 +72,7 @@ nav {
 }
 
 .nav-bar2 a {
-  color: rgb(85, 85, 85);
+  color: rgb(189,189,189);
   padding-left: 10px;
   align-items: center;
 }
@@ -138,7 +138,8 @@ nav {
   }
 }
 
-@media only screen and (max-width: 825px) {
+@media only screen and (min-width: 768px) {
+
   /*Nav bar 1*/
   .nav-bar1 .nav-bar1-2 {
     display: none;
@@ -148,6 +149,8 @@ nav {
     justify-content: flex-end;
     align-items: center;
     flex-wrap: nowrap;
+    margin-left: 65px;
+    margin-right: -60px;
   }
 
   .nav-bar1 a {
@@ -158,34 +161,24 @@ nav {
   /*nav bar 2*/
   .nav-bar .nav-bar2 {
     display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+  }
+
+  .nav-bar2 .nav-links{
+    font-size: 12px;
+    display: flex;
+
+  }
+
+  .hidden-navbar .nav-logo {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    margin-top: -40px;
+    height: 90px;
     
   }
-  /*.hidden-navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }*/
-
-  .nav-bar .nav-logo {
-    display: flex;
-  }
-
-  /*.nav-bar .hidden-icons {
-    display: flex;
-    align-items: center;
-  }
-
-  /*.hidden-icons a {
-    padding: 20px;
-    border-left: 1px solid rgb(234, 234, 234);
-  }
- /* .hidden-icons .search{
-    color: rgb(189,189,189);
-  }
-  .hidden-icons .menu{
-    color: red;
-    display:none;
-  }*/
 
 
 }
