@@ -50,30 +50,14 @@ nav {
   padding-right: 10px;
 }
 
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: black;
-  z-index: 1;
-}
-
 .nav-bar2 {
   height: 50px;
   background-color: white;
   font-family: Shentox, sans-serif;
   font-size: 14px;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
   align-items: center;
 }
 
