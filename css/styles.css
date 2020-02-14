@@ -12,6 +12,8 @@ li {
   list-style-type: none;
 }
 
+/*NAV BAR*/
+
 nav {
   width: 100%;
   height: 120px;
@@ -85,7 +87,9 @@ nav {
 .nav-bar2 .search {
   display: flex;
   justify-content: flex-end;
-  padding-right: 10px;
+  padding: 20px;
+  border-left: 1px solid rgb(234, 234, 234);
+  
 }
 
 .nav-bar3 {
@@ -192,6 +196,7 @@ main {
   height: 5000px;
   background-color: fuchsia;
 }
+/*TOP GRID*/
 
 .articles {
   display: grid;
@@ -228,7 +233,7 @@ main {
   font-size: 10px;
 }
 
-/*MEDIA QUERY FOR MAIN SECTION*/
+/*MEDIA QUERY FOR TOP GRID SECTION*/
 
 @media only screen and (max-width: 767px) {
   .articles {
@@ -267,6 +272,102 @@ main {
     font-size: 10px;
   }
 }
+
+/* LATEST NEWS SECTION*/
+
+.latest-news img{
+height: 150px;
+width:250px;
+}
+ 
+.latest-news .news-title p{
+font-family: "Avalon", sans-serif;
+font-size: 25px;
+color: red;
+}
+
+.latest-news .news-title p:hover{
+  color: black;
+}
+
+.latest-news p{
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  color: black;
+  font-weight: 700px;
+  margin-right: 18px;
+}
+
+ .latest-news small{
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  color: rgb(170, 170, 170);
+  font-weight: 700px;
+}
+
+.latest-news{
+  display: grid;
+  grid-template-columns: 1fr repeat(4, 2fr) 1fr;
+  grid-template-rows: 50px repeat(2, 240px) 150px;
+  grid-column-gap: 10px;
+  background-color: white;
+}
+
+ .latest-news .news-title{
+   grid-column: 2/ span 4;
+   grid-row: 1;
+ }
+
+ .latest-news .book{
+  grid-column: 2;
+  grid-row: 2;
+ }
+
+ .latest-news .game{
+   grid-column: 3;
+   grid-row: 2;
+ }
+
+ .latest-news .candy{
+   grid-column: 4;
+   grid-row: 2;
+ }
+
+ .latest-news .whatsapp{
+   grid-column: 5;
+   grid-row: 2;
+ }
+
+ .latest-news .instagram{
+   grid-column: 2;
+   grid-row: 3;
+ }
+
+ .latest-news .bitcoin{
+  grid-column: 3;
+  grid-row: 3;
+}
+.latest-news .stalkerware{
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.latest-news .google{
+  grid-column: 5;
+  grid-row: 3;
+}
+
+.latest-news .ad {
+  grid-row: 4;
+  grid-column: 3/ span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+
+
 
 /* FOOTER*/
 footer {
