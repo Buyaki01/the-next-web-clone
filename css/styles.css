@@ -110,13 +110,13 @@ nav {
   
   .nav-bar .hidden-nav {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    flex-flow: row nowrap;
   }
 
-  .hidden-nav .nav-logo {
+  .hidden-nav .hidden-icons a {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
   }
 
 }
