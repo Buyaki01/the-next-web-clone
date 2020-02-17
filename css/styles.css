@@ -540,30 +540,30 @@ main {
   padding-right: 10px;
 }
 
-.latest-funding img{
+.latest-funding img {
   height: 50px;
   width: 50px;
 }
 
-.latest-funding h4{
+.latest-funding h4 {
   font-family: "Avalon", sans-serif;
   font-size: 18px;
   color: black;
 }
 
-.latest-funding h6{
+.latest-funding h6 {
   font-family: "Shentox", sans-serif;
   font-size: 13px;
   color: rgb(170, 170, 170);
   font-weight: 700;
 }
 
-.latest-funding .tags{
+.latest-funding .tags {
   font-family: "Shentox", sans-serif;
   font-size: 13px;
   font-weight: 700;
 }
-.latest-funding span{
+.latest-funding span {
   font-family: "Shentox", sans-serif;
   font-size: 13px;
   color: rgb(170, 170, 170);
