@@ -543,6 +543,12 @@ main {
   padding-right: 10px;
 }
 
+#border {
+  border-right: 1px solid red;
+  border-left: 1px solid red;
+  height: 15px;
+}
+
 .latest-funding img {
   height: 55px;
   width: 50px;
@@ -571,6 +577,7 @@ main {
   color: rgb(84, 84, 84);
 }
 .latest-funding .tags .fa {
+  padding-right: 5px;
   color: black;
 }
 .latest-funding span {
@@ -589,7 +596,7 @@ main {
 .latest-funding {
   display: grid;
   grid-template-columns: 1fr repeat(4, 2fr) 1fr;
-  grid-template-rows: 50px 240px 25px; 
+  grid-template-rows: 50px 240px 25px;
   grid-column-gap: 20px;
   background-color: white;
 }
@@ -783,6 +790,96 @@ main {
 }
 
 /*MEDIA QUERIES FOR LATEST FUNDING */
+
+@media only screen and (max-width: 767px) {
+  #border {
+    border: none;
+  }
+
+  .latest-funding {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25px 75px repeat(3, 250px);
+    grid-row-gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .latest-funding .funding-title {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .latest-funding .funding-links {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-left: -10px;
+  }
+
+  .latest-funding .elliptic {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .latest-funding .block {
+    grid-row: 4;
+    grid-column: 1;
+  }
+
+  .latest-funding .toast {
+    grid-row: 5;
+    grid-column: 1;
+  }
+  .latest-funding .nova {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .latest-funding {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 50px 250px;
+    grid-column-gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .latest-funding .funding-title {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+  }
+
+  .latest-funding .funding-links {
+    grid-row: 2;
+    grid-column: 1 / span 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: -10px;
+  }
+
+  .latest-funding .elliptic {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .latest-funding .block {
+    grid-row: 3;
+    grid-column: 2;
+  }
+
+  .latest-funding .toast {
+    grid-row: 3;
+    grid-column: 3;
+  }
+  .latest-funding .nova {
+    display: none;
+  }
+}
 
 /* FOOTER*/
 footer {
