@@ -530,6 +530,9 @@ main {
 .latest-funding .funding-title .fa {
   font-size: 17px;
 }
+.latest-funding .funding-links a:hover {
+  color: black;
+}
 
 .latest-funding .funding-links a {
   font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
@@ -541,8 +544,11 @@ main {
 }
 
 .latest-funding img {
-  height: 50px;
+  height: 55px;
   width: 50px;
+  float: left;
+  z-index: 10;
+  padding-top: 5px;
 }
 
 .latest-funding h4 {
@@ -553,21 +559,227 @@ main {
 
 .latest-funding h6 {
   font-family: "Shentox", sans-serif;
-  font-size: 13px;
+  font-size: 11px;
   color: rgb(170, 170, 170);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .latest-funding .tags {
   font-family: "Shentox", sans-serif;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 400;
+  color: rgb(84, 84, 84);
+}
+.latest-funding .tags .fa {
+  color: black;
 }
 .latest-funding span {
   font-family: "Shentox", sans-serif;
   font-size: 13px;
   color: rgb(170, 170, 170);
-  font-weight: 700;
+  font-weight: 400;
+}
+
+.latest-funding hr {
+  color: rgb(246, 192, 188);
+  margin-right: -20px;
+  margin-left: -10px;
+}
+
+.latest-funding {
+  display: grid;
+  grid-template-columns: 1fr repeat(4, 2fr) 1fr;
+  grid-template-rows: 50px 240px 25px; 
+  grid-column-gap: 20px;
+  background-color: white;
+}
+
+.latest-funding .funding-title {
+  grid-row: 1;
+  grid-column: 2 / span 2;
+}
+
+.latest-funding .funding-links {
+  grid-row: 1;
+  grid-column: 4 / span 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.latest-funding .elliptic {
+  grid-row: 2;
+  grid-column: 2;
+  background-color: rgb(254, 250, 248);
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.latest-funding .elliptic h4 {
+  margin-left: -10px;
+  margin-right: -20px;
+}
+
+.elliptic .elliptic-title {
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 70px;
+  background-color: red;
+  color: white;
+}
+.elliptic .elliptic-details {
+  height: 50px;
+  margin-left: -10px;
+  margin-right: -20px;
+  padding-top: 5px;
+  padding-left: 80px;
+  background-color: rgb(251, 232, 230);
+  color: black;
+}
+.elliptic .elliptic-details h6 {
+  margin-left: -10px;
+}
+
+.elliptic .elliptic-tags {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.elliptic .text p {
+  line-height: 18px;
+}
+
+.latest-funding .block {
+  grid-row: 2;
+  grid-column: 3;
+  padding-left: 10px;
+  padding-right: 20px;
+  background-color: rgb(254, 250, 248);
+}
+
+.latest-funding .block h4 {
+  margin-left: -10px;
+  margin-right: -20px;
+}
+
+.block .block-title {
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 70px;
+  background-color: red;
+  color: white;
+}
+.block .block-details {
+  height: 50px;
+  margin-left: -10px;
+  margin-right: -20px;
+  padding-top: 5px;
+  padding-left: 80px;
+  background-color: rgb(251, 232, 230);
+  color: black;
+}
+.block .block-details h6 {
+  margin-left: -10px;
+}
+
+.block .block-tags {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.block .text p {
+  line-height: 18px;
+}
+
+.latest-funding .toast {
+  grid-row: 2;
+  grid-column: 4;
+  background-color: rgb(254, 250, 248);
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.latest-funding .toast h4 {
+  margin-left: -10px;
+  margin-right: -20px;
+}
+
+.toast .toast-title {
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 70px;
+  background-color: red;
+  color: white;
+}
+.toast .toast-details {
+  height: 50px;
+  margin-left: -10px;
+  margin-right: -20px;
+  padding-top: 5px;
+  padding-left: 80px;
+  background-color: rgb(251, 232, 230);
+  color: black;
+}
+.toast .toast-details h6 {
+  margin-left: -10px;
+}
+
+.toast .toast-tags {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.toast .text p {
+  line-height: 18px;
+}
+
+.latest-funding .nova {
+  grid-row: 2;
+  grid-column: 5;
+  background-color: rgb(254, 250, 248);
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.latest-funding .nova h4 {
+  margin-left: -10px;
+  margin-right: -20px;
+}
+
+.nova .nova-title {
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 70px;
+  background-color: red;
+  color: white;
+}
+.nova .nova-details {
+  height: 50px;
+  margin-left: -10px;
+  margin-right: -20px;
+  padding-top: 5px;
+  padding-left: 80px;
+  background-color: rgb(251, 232, 230);
+  color: black;
+}
+.nova .nova-details h6 {
+  margin-left: -10px;
+}
+
+.nova .nova-tags {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.nova .text p {
+  line-height: 18px;
 }
 
 /*MEDIA QUERIES FOR LATEST FUNDING */
