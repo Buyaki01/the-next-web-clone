@@ -195,12 +195,15 @@ main {
   height: 5000px;
   background-color: fuchsia;
 }
+
 /*TOP GRID*/
 
 .articles {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(2, 250px) 150px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
   background-color: white;
 }
 
@@ -373,15 +376,22 @@ main {
 
 @media only screen and (max-width: 767px) {
   .latest-news img {
-    height: 50px;
-    width: 80px;
+    height: 75px;
+    width: 100px;
+    padding-right: 10px;
   }
 
   .latest-news {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px repeat(9, 100px);
+    grid-template-columns: 100%;
+    grid-template-rows: 50px repeat(9, 75px);
+    grid-row-gap: 10px;
     background-color: white;
+    padding-left: 20px;
+  }
+
+  .latest-news img {
+    float: left;
   }
 
   .latest-news .news-title {
