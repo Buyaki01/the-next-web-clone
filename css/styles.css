@@ -466,32 +466,32 @@ main {
     grid-column: 1 / span 3;
     grid-row: 1;
   }
-  
+
   .latest-news .book {
     grid-column: 1;
     grid-row: 2;
   }
-  
+
   .latest-news .game {
     grid-column: 2;
     grid-row: 2;
   }
-  
+
   .latest-news .candy {
     grid-column: 3;
     grid-row: 2;
   }
-  
+
   .latest-news .whatsapp {
     grid-column: 1;
     grid-row: 3;
   }
-  
+
   .latest-news .instagram {
     grid-column: 2;
     grid-row: 3;
   }
-  
+
   .latest-news .bitcoin {
     grid-column: 3;
     grid-row: 3;
@@ -500,12 +500,12 @@ main {
     grid-column: 1;
     grid-row: 4;
   }
-  
+
   .latest-news .google {
     grid-column: 2;
     grid-row: 4;
   }
-  
+
   .latest-news .ad {
     grid-row: 5;
     grid-column: 1 / span 3;
@@ -514,8 +514,63 @@ main {
     align-items: center;
     font-size: 10px;
   }
-
 }
+
+/* LATEST FUNDING SECTION*/
+.latest-funding .funding-title p {
+  font-family: "Avalon", sans-serif;
+  font-size: 25px;
+  color: red;
+}
+
+.latest-funding .funding-title p:hover {
+  color: black;
+}
+
+.latest-funding .funding-title .fa {
+  font-size: 17px;
+}
+
+.latest-funding .funding-links a {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  color: red;
+  font-weight: 700px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.latest-funding img{
+  height: 50px;
+  width: 50px;
+}
+
+.latest-funding h4{
+  font-family: "Avalon", sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+.latest-funding h6{
+  font-family: "Shentox", sans-serif;
+  font-size: 13px;
+  color: rgb(170, 170, 170);
+  font-weight: 700;
+}
+
+.latest-funding .tags{
+  font-family: "Shentox", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+.latest-funding span{
+  font-family: "Shentox", sans-serif;
+  font-size: 13px;
+  color: rgb(170, 170, 170);
+  font-weight: 700;
+}
+
+/*MEDIA QUERIES FOR LATEST FUNDING */
 
 /* FOOTER*/
 footer {
