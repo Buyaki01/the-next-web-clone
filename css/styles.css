@@ -949,7 +949,7 @@ main {
 .latest-section {
   display: grid;
   grid-template-columns: 1fr repeat(3, 3fr) 1fr;
-  grid-template-rows: 40px 240px 100px 170px 20px 240px 100px 170px  20px 240px 100px 170px;
+  grid-template-rows: 40px 240px 100px 170px 20px 40px 240px 100px 170px  20px 40px 240px 100px 170px;
   background-color: white;
 }
 
