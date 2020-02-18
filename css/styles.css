@@ -923,32 +923,46 @@ i {
   z-index: 1;
 }
 
-.latest-section .latest-link {
+.latest-section .latest .latest-link {
   font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: rgb(255, 68, 34);
-  z-index: 1;
 }
 
-.latest-section .latest-link:hover {
+.latest-section .latest .latest-link:hover {
   text-decoration: underline;
 }
 
+.latest {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 244, 243);
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
 .latest-section .latest img {
-  height: 50px;
-  width: 50px;
-  z-index: 1;
+  height: 100px;
+  width: 100px;
+  float: right;
+  margin-top: -40px;
 }
 
 .latest-section .latest-list ul li {
   list-style-type: disc;
   color: red;
+  list-style-position: inside;
 }
 
 .latest-section .latest-list ul li a {
+  color: grey;
+}
+
+.latest-section .latest-list ul li a:hover {
   color: black;
 }
+
 .latest-section img {
   width: 100%;
   height: 100%;
@@ -972,7 +986,6 @@ z-index: 2;
   padding-top: 20px;
   padding-left: 14px;
   padding-right: 14px;
-  grid-row-gap: 10px;
   background-color: white;
 }
 
@@ -1029,11 +1042,6 @@ z-index: 2;
 .latest-section .tech-image {
   grid-column: 4;
   grid-row: 2;
-  background-image: url("images\tech.jpg");
-  background-repeat: no-repeat;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .latest-section .tech-latest {
@@ -1054,11 +1062,6 @@ z-index: 2;
 .latest-section .creative-image {
   grid-column: 2;
   grid-row: 7;
-  background-image: url("images\creative.jpg");
-  background-repeat: no-repeat;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .latest-section .creative-latest {
@@ -1079,11 +1082,6 @@ z-index: 2;
 .latest-section .podium-image {
   grid-column: 3;
   grid-row: 7;
-  background-image: url("images\podium.png");
-  background-repeat: no-repeat;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .latest-section .podium-latest {
@@ -1104,11 +1102,6 @@ z-index: 2;
 .latest-section .creative-image {
   grid-column: 2;
   grid-row: 7;
-  background-image: url("images\creative.jpg");
-  background-repeat: no-repeat;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .latest-section .creative-latest {
@@ -1129,11 +1122,6 @@ z-index: 2;
 .latest-section .insights-image {
   grid-column: 4;
   grid-row: 7;
-  background-image: url("images\insights.png");
-  background-repeat: no-repeat;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .latest-section .insights-latest {
@@ -1154,11 +1142,6 @@ z-index: 2;
 .latest-section .launch-image {
   grid-column: 2;
   grid-row: 12;
-  background-image: url("images\launch.jpg");
-  background-repeat: no-repeat;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .latest-section .launch-latest {
@@ -1179,11 +1162,6 @@ z-index: 2;
 .latest-section .distract-image {
   grid-column: 3;
   grid-row: 12;
-  background-image: url("images\distract.jpg");
-  background-repeat: no-repeat;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .latest-section .distract-latest {
