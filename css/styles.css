@@ -950,6 +950,12 @@ main {
   display: grid;
   grid-template-columns: 1fr repeat(3, 3fr) 1fr;
   grid-template-rows: 40px 240px 50px repeat(5, 30px);
+  background-color: white;
+}
+
+.latest-section .app-header {
+  grid-column: 2;
+  grid-row: 1;
 }
 
 /* FOOTER*/
