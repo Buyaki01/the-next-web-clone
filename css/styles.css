@@ -934,25 +934,29 @@ i {
   text-decoration: underline;
 }
 
+/* Changes I made */
 .latest {
-  display: flex;
-  flex-direction: column;
   background-color: rgb(255, 244, 243);
-  padding-left: 10px;
-  padding-top: 10px;
+}
+
+.latest .latest-text {
+  padding: 10px;
+}
+.latest .latest-image {
+  padding: 3px;
 }
 
 .latest-section .latest img {
-  height: 100px;
-  width: 100px;
-  float: right;
-  margin-top: -40px;
+  height: 100%;
+  width: 100%;
 }
 
 .latest-section .latest-list ul li {
   list-style-type: disc;
   color: red;
   list-style-position: inside;
+  padding: 5px;
+  border-bottom: 1px solid lightgrey;
 }
 
 .latest-section .latest-list ul li a {
@@ -978,10 +982,11 @@ z-index: 2;
   padding-left: 20px;
 }
 
+/* Increased the height of the li items to give it more spacing, after adding padding */ 
 .latest-section {
   display: grid;
   grid-template-columns: 1fr repeat(3, 3fr) 1fr;
-  grid-template-rows: 40px 240px 100px 170px 20px 40px 240px 100px 170px 20px 40px 240px 100px 170px;
+  grid-template-rows: 40px 240px 100px 230px 20px 40px 240px 100px 230px 20px 40px 240px 100px 230px;
   grid-column-gap: 20px;
   padding-top: 20px;
   padding-left: 14px;
@@ -999,9 +1004,12 @@ z-index: 2;
   grid-row: 2;
 }
 
+/* Created a sub-grid */
 .latest-section .app-latest {
   grid-column: 2;
   grid-row: 3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .latest-section .app-list {
@@ -1017,16 +1025,14 @@ z-index: 2;
 .latest-section .gear-image {
   grid-column: 3;
   grid-row: 2;
-  background-image: url("images\gear.png");
-  background-repeat: no-repeat;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
+/* Created a sub-grid */
 .latest-section .gear-latest {
   grid-column: 3;
   grid-row: 3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .latest-section .gear-list {
@@ -1044,9 +1050,12 @@ z-index: 2;
   grid-row: 2;
 }
 
+/*Created a sub-grid */
 .latest-section .tech-latest {
   grid-column: 4;
   grid-row: 3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .latest-section .tech-list {
@@ -1064,9 +1073,12 @@ z-index: 2;
   grid-row: 7;
 }
 
+/* Created a sub-grid */
 .latest-section .creative-latest {
   grid-column: 2;
   grid-row: 8;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .latest-section .creative-list {
@@ -1084,9 +1096,12 @@ z-index: 2;
   grid-row: 7;
 }
 
+/* Created a sub-grid */
 .latest-section .podium-latest {
   grid-column: 3;
   grid-row: 8;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .latest-section .podium-list {
@@ -1104,9 +1119,12 @@ z-index: 2;
   grid-row: 7;
 }
 
+/* Created a sub-grid */
 .latest-section .creative-latest {
   grid-column: 2;
   grid-row: 8;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .latest-section .creative-list {
@@ -1124,9 +1142,12 @@ z-index: 2;
   grid-row: 7;
 }
 
+/*Created a sub-grid */
 .latest-section .insights-latest {
   grid-column: 4;
   grid-row: 8;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .latest-section .insights-list {
@@ -1144,9 +1165,12 @@ z-index: 2;
   grid-row: 12;
 }
 
+/* Created a sub-grid */
 .latest-section .launch-latest {
   grid-column: 2;
   grid-row: 13;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .latest-section .launch-list {
@@ -1164,9 +1188,12 @@ z-index: 2;
   grid-row: 12;
 }
 
+/*Created a sub-grid */
 .latest-section .distract-latest {
   grid-column: 3;
   grid-row: 13;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .latest-section .distract-list {
