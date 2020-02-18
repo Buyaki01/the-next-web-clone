@@ -1,465 +1,748 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Next Web Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Next Web Clone</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-</head>
-
-<body>
-  <nav class="nav-bar">
-    <div class="nav-bar1">
-      <div class="nav-bar1-1">
-        <a href="#">News</a>
-        <a href="#">Events ▾ </a>
-        <a href="#">Business ▾ </a>
-        <a href="#">AMAs</a>
-        <a href="#">Spaces</a>
-        <a href="#">Terms & Conditions</a>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-bar1">
+        <div class="nav-bar1-1">
+          <a href="#">News</a>
+          <a href="#">Events ▾ </a>
+          <a href="#">Business ▾ </a>
+          <a href="#">AMAs</a>
+          <a href="#">Spaces</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+        <div class="nav-bar1-2">
+          <a href="#">About</a>
+          <a href="#">Team</a>
+          <a href="#">Advertise</a>
+          <a href="#">Jobs</a>
+          <a href="#">Contact</a>
+        </div>
       </div>
-      <div class="nav-bar1-2">
-        <a href="#">About</a>
-        <a href="#">Team</a>
-        <a href="#">Advertise</a>
-        <a href="#">Jobs</a>
-        <a href="#">Contact</a>
+      <div class="hidden-navbar">
+        <div class="nav-logo">
+          <img src="images\the_next_web_logo.jpg" alt="logo" />
+        </div>
+        <div class="hidden-icons">
+          <a href="#" class="search">
+            <i class="fa fa-search fa-flip-horizontal"></i>
+          </a>
+          <a href="#" class="menu">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="hidden-navbar">
-      <div class="nav-logo">
-        <img src="images\the_next_web_logo.jpg" alt="logo" />
-      </div>
-      <div class="hidden-icons">
+      <div class="nav-bar2">
+        <div class="nav-links">
+          <a href="#">LATEST</a>
+          <a href="#">HARD FORK</a>
+          <a href="#">PLUGGED</a>
+          <a href="#">FUNDAMENTALS</a>
+          <a href="#">WORK 2030</a>
+          <a href="#">README</a>
+          <a href="#">GROWTH QUARTERS</a>
+          <a href="#">NEURAL</a>
+        </div>
         <a href="#" class="search">
           <i class="fa fa-search fa-flip-horizontal"></i>
         </a>
-        <a href="#" class="menu">
-          <i class="fa fa-bars"></i>
-        </a>
       </div>
-    </div>
-    <div class="nav-bar2">
-      <div class="nav-links">
-        <a href="#">LATEST</a>
-        <a href="#">HARD FORK</a>
-        <a href="#">PLUGGED</a>
-        <a href="#">FUNDAMENTALS</a>
-        <a href="#">WORK 2030</a>
-        <a href="#">README</a>
-        <a href="#">GROWTH QUARTERS</a>
-        <a href="#">NEURAL</a>
-      </div>
-      <a href="#" class="search">
-        <i class="fa fa-search fa-flip-horizontal"></i>
-      </a>
-    </div>
-    <div class="nav-bar3">
-      <a href="#">
-        Startups! You can exhibit, pitch, and meet investors at TNW2020 →
-      </a>
-    </div>
-  </nav>
-  <main>
-    <div class="articles">
-      <div class="article-one">
+      <div class="nav-bar3">
         <a href="#">
-          <img src="images/money.png" alt="money" />
+          Startups! You can exhibit, pitch, and meet investors at TNW2020 →
         </a>
       </div>
-      <div class="article-two">
-        <a href="#">
-          <img class="article-image" src="images/facial.png" alt="surveillance cameras" />
-        </a>
+    </nav>
+    <main>
+      <div class="articles">
+        <div class="article-one">
+          <a href="#">
+            <img src="images/money.png" alt="money" />
+          </a>
+        </div>
+        <div class="article-two">
+          <a href="#">
+            <img
+              class="article-image"
+              src="images/facial.png"
+              alt="surveillance cameras"
+            />
+          </a>
+        </div>
+        <div class="article-three">
+          <a href="#">
+            <img class="article-image" src="images/Tesla.jpg" alt="car" />
+          </a>
+        </div>
+        <p class="ad">ADVERTISEMENT</p>
       </div>
-      <div class="article-three">
-        <a href="#">
-          <img class="article-image" src="images/Tesla.jpg" alt="car" />
-        </a>
-      </div>
-      <p class="ad">ADVERTISEMENT</p>
-    </div>
 
-    <div class="latest-news">
-      <a class="news-title" href="#">
-        <p>Latest News <i class="fa fa-chevron-right"></i></p>
-      </a>
-      <a class="book" href="#">
-        <img src="images/book.jpg" alt="book" />
-        <p> <strong>How to read a best-selling book in 12 minutes</strong></p>
-        <small> TNW Deals • 12 minutes ago </small>
-      </a>
-      <a class="game" href="#">
-        <img src="images/streetfighter.jpg" alt="mini street fighter" />
-        <p> <strong>
-            This mini Street Fighter II arcade cabinet is retro gaming goals</strong>
+      <div class="latest-news">
+        <a class="news-title" href="#">
+          <p>Latest News <i class="fa fa-chevron-right"></i></p>
+        </a>
+        <a class="book" href="#">
+          <img src="images/book.jpg" alt="book" />
+          <p><strong>How to read a best-selling book in 12 minutes</strong></p>
+          <small> TNW Deals • 12 minutes ago </small>
+        </a>
+        <a class="game" href="#">
+          <img src="images/streetfighter.jpg" alt="mini street fighter" />
+          <p>
+            <strong>
+              This mini Street Fighter II arcade cabinet is retro gaming
+              goals</strong
+            >
+          </p>
+          <small> TNW Deals • 42 minutes ago </small>
+        </a>
+        <a class="candy" href="#">
+          <img src="images/candyhearts.png" alt="candy hearts" />
+          <p>
+            <strong
+              >Scientist trains AI to write messages of love on candy
+              hearts</strong
+            >
+          </p>
+          <small> Thomas Macaulay • 1 hour ago </small>
+        </a>
+        <a class="whatsapp" href="#">
+          <img src="images/whatsapp-796x398.jpg" alt="whatsapp" />
+          <p>
+            <strong>
+              How to restore WhatsApp messages when you get a new phone AND a
+              new number</strong
+            >
+          </p>
+          <small> Matthew Beedham • 2 hours ago </small>
+        </a>
+        <a class="instagram" href="#">
+          <img src="images/Instagram-test-796x417.png" alt="instagram" />
+          <p>
+            <strong>
+              Instagram is testing a way to display posts in chronological
+              order</strong
+            >
+          </p>
+          <small> Ivan Mehta • 3 hours ago </small>
+        </a>
+        <a class="bitcoin" href="#">
+          <img src="images/bitcoin.jpeg" alt="bitcoin" />
+          <p>
+            <strong>
+              Satoshi Nakaboto: ‘Man charged with operating $300M
+              money-laundering Bitcoin 'mixer'’</strong
+            >
+          </p>
+          <small> Satoshi Nakaboto • 3 hours ago </small>
+        </a>
+        <a class="stalkerware" href="#">
+          <img src="images/stalkerware.png" alt="stalkerware" />
+          <p>
+            <strong>
+              1 in 10 Americans admit to using 'stalkerware' to monitor their
+              partners</strong
+            >
+          </p>
+          <small> Cara Curtis • 3 hours ago </small>
+        </a>
+        <a class="google" href="#">
+          <img src="images/google.jpg" alt="google" />
+          <p>
+            <strong>
+              Google's Area 120 is bringing lightweight games to low-powered
+              devices</strong
+            >
+          </p>
+          <small> Ivan Mehta • 6 hours ago </small>
+        </a>
+        <p class="ad">ADVERTISEMENT</p>
+      </div>
+      <div class="latest-funding">
+        <a href="#" class="funding-title">
+          <p>
+            Latest funding rounds on Index.co
+            <i class="fa fa-chevron-right"></i>
+          </p>
+        </a>
+        <p class="funding-links">
+          <a href="#">Add Info</a>
+          <a href="#" id="border">Get updates by email</a>
+          <a href="#">See more</a>
         </p>
-        <small> TNW Deals • 42 minutes ago </small>
-      </a>
-      <a class="candy" href="#">
-        <img src="images/candyhearts.png" alt="candy hearts" />
-        <p> <strong>Scientist trains AI to write messages of love on candy hearts</strong></p>
-        <small> Thomas Macaulay • 1 hour ago </small>
-      </a>
-      <a class="whatsapp" href="#">
-        <img src="images/whatsapp-796x398.jpg" alt="whatsapp" />
-        <p> <strong>
-            How to restore WhatsApp messages when you get a new phone AND a new
-            number</strong>
-        </p>
-        <small> Matthew Beedham • 2 hours ago </small>
-      </a>
-      <a class="instagram" href="#">
-        <img src="images/Instagram-test-796x417.png" alt="instagram" />
-        <p> <strong>
-            Instagram is testing a way to display posts in chronological order</strong>
-        </p>
-        <small> Ivan Mehta • 3 hours ago </small>
-      </a>
-      <a class="bitcoin" href="#">
-        <img src="images/bitcoin.jpeg" alt="bitcoin" />
-        <p> <strong>
-            Satoshi Nakaboto: ‘Man charged with operating $300M money-laundering
-            Bitcoin 'mixer'’</strong>
-        </p>
-        <small> Satoshi Nakaboto • 3 hours ago </small>
-      </a>
-      <a class="stalkerware" href="#">
-        <img src="images/stalkerware.png" alt="stalkerware" />
-        <p> <strong>
-            1 in 10 Americans admit to using 'stalkerware' to monitor their
-            partners</strong>
-        </p>
-        <small> Cara Curtis • 3 hours ago </small>
-      </a>
-      <a class="google" href="#">
-        <img src="images/google.jpg" alt="google" />
-        <p> <strong>
-            Google's Area 120 is bringing lightweight games to low-powered
-            devices</strong>
-        </p>
-        <small> Ivan Mehta • 6 hours ago </small>
-      </a>
-      <p class="ad">ADVERTISEMENT</p>
-    </div>
-    <div class="latest-funding">
-      <a href="#" class="funding-title">
-        <p>
-          Latest funding rounds on Index.co
+        <div class="elliptic">
+          <a href="#">
+            <img src="images/Elliptic.jpeg" />
+            <h4 class="elliptic-title">Elliptic</h4>
+            <div class="elliptic-details">
+              <h4>$5M</h4>
+              <h6>SERIES B</h6>
+            </div>
+            <div>
+              <a href="#" class="elliptic-tags tags">
+                <p><i class="fa fa-tag" aria-hidden="true"></i>Finance, +3</p>
+                <p>
+                  <i class="fa fa-briefcase" aria-hidden="true"></i> Wells Fargo
+                  Strategic Capital
+                </p>
+                <hr />
+              </a>
+              <a href="#" class=" text tags">
+                <p>
+                  Elliptic Receives $5M Investment from Wells Fargo Strategic
+                  Capital <span class="source"> On FInSMEs</span>
+                </p>
+              </a>
+            </div>
+          </a>
+        </div>
+        <div class="block">
+          <a href="#">
+            <img src="images/blockfi.jpeg" />
+            <h4 class="block-title">BlockFI</h4>
+            <div class="block-details">
+              <h4>$30M</h4>
+              <h6>SERIES B</h6>
+            </div>
+            <div>
+              <a href="#" class="block-tags tags">
+                <p>
+                  <i class="fa fa-tag" aria-hidden="true"></i>Financial
+                  Services, +3
+                </p>
+                <p>
+                  <i class="fa fa-briefcase" aria-hidden="true"></i> Winklevoss
+                  Capital, +12
+                </p>
+                <hr />
+              </a>
+              <a href="#" class=" text tags">
+                <p>
+                  Cryptocurrency lending firm BlockFi raises $30M to expand
+                  product offerings <span class="source"> On SiliconANGLE</span>
+                </p>
+              </a>
+            </div>
+          </a>
+        </div>
+        <div class="toast">
+          <a href="#">
+            <img src="images/toast.png" />
+            <h4 class="toast-title">Toast, INC.</h4>
+            <div class="toast-details">
+              <h4>$400M</h4>
+              <h6>VENTURE CAPITAL</h6>
+            </div>
+            <div>
+              <a href="#" class="toast-tags tags">
+                <p><i class="fa fa-tag" aria-hidden="true"></i>Apps, +2</p>
+                <p>
+                  <i class="fa fa-briefcase" aria-hidden="true"></i> Bessemer
+                  Venture Partners, +3
+                </p>
+                <hr />
+              </a>
+
+              <a href="#" class="text tags">
+                <p>
+                  Toast Lands $400M, Bringing Valuation To Nearly $5B
+                  <span class="source"> On Crunchbase News</span>
+                </p>
+              </a>
+            </div>
+          </a>
+        </div>
+        <div class="nova">
+          <a href="#">
+            <img src="images/nova.png" />
+            <h4 class="nova-title">Nova Credit</h4>
+            <div class="nova-details">
+              <h4>$50M</h4>
+              <h6>SERIES B</h6>
+            </div>
+            <div>
+              <a href="#" class="nova-tags tags">
+                <p><i class="fa fa-tag" aria-hidden="true"></i>Finance, +3</p>
+                <p>
+                  <i class="fa fa-briefcase" aria-hidden="true"></i> NYCA
+                  Partners, +7
+                </p>
+                <hr />
+              </a>
+
+              <a href="#" class="text tags">
+                <p>
+                  Nova Credit: This Cross-Border Consumer Credit Company Just
+                  Raised $50 Million Funding
+                  <span class="source"> On Pulse 2.0</span>
+                </p>
+              </a>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="latest-section">
+        <p class="header app-header">
+          <a href="#"> Apps </a>
           <i class="fa fa-chevron-right"></i>
         </p>
-      </a>
-      <p class="funding-links">
-        <a href="#">Add Info</a> <a href="#" id="border">Get updates by email</a>
-        <a href="#">See more</a> 
-      </p>
-      <div class="elliptic">
-        <a href="#">
-         <img src="images/Elliptic.jpeg">
-          <h4 class="elliptic-title">Elliptic</h4>
-          <div class="elliptic-details">
-            <h4>$5M</h4>
-            <h6>SERIES B</h6>
-          </div>
-          <div>
-            <a href="#" class="elliptic-tags tags">
-              <p><i class="fa fa-tag" aria-hidden="true"></i>Finance, +3</p>
-              <p>
-                <i class="fa fa-briefcase" aria-hidden="true"></i> Wells Fargo
-                Strategic Capital
-              </p>
-              <hr>
+        <div class="app-image">
+          <img src="images/app.png" />
+          <div class="image-text">
+            <h2>MOST POPULAR</h2>
+            <a href="#" class="image-link">
+              Facebook Lite gets Dark Mode while the main app is still waiting
             </a>
-            <a href="#" class=" text tags">
-              <p>
-                Elliptic Receives $5M Investment from Wells Fargo Strategic
-                Capital <span class="source"> On FInSMEs</span>
-              </p>
-            </a>
+            <h6>Napier Lopez • 2 days ago</h6>
           </div>
-        </a>
+        </div>
+        <div class="latest app-latest">
+          <h2>LATEST</h2>
+          <p>
+            <a href="#" class="latest-link"
+              >Facebook just released a Pinterest-style app called Hobbi
+            </a>
+          </p>
+          <img src="images\app2.jpg" alt="App" />
+        </div>
+        <div class="latest-list app-list">
+          <ul>
+            <li>
+              <a href="#"
+                >Steam rolls out new feature to help you decide what game to
+                play next</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Instagram is testing a way to display posts in chronological
+                order</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Google’s Area 120 is bringing lightweight games to low-powered
+                devices</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Uber test lets you dial a phone number for a ride – no app
+                required</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >How to play a game on your phone via the Steam Link app</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p class="header gear-header">
+          <a href="#"> Gear </a>
+          <i class="fa fa-chevron-right"></i>
+        </p>
+        <div class="gear-image">
+          <img src="images/gear.png" />
+          <div class="image-text">
+            <h2>MOST POPULAR</h2>
+            <a href="#" class="image-link">
+              Life with the MacBook Touch Bar is awful and I hate it
+            </a>
+            <h6>Callum Booth • 47 minutes ago</h6>
+          </div>
+        </div>
+        <div class="latest gear-latest">
+          <h2>LATEST</h2>
+          <p>
+            <a href="#" class="latest-link">
+              Report: Microsoft’s Surface Book 3 will arrive this spring
+            </a>
+          </p>
+          <img src="images\gear2.jpg" alt="Gear" />
+        </div>
+        <div class="latest-list gear-list">
+          <ul>
+            <li>
+              <a href="#"
+                >Nope, I refuse to believe this leaked Pixel 5 prototype is
+                real</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >The new Moto Razr might be the hardest phone to repair ever</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >US accuses Huawei of stealing trade secrets and racketeering</a
+              >
+            </li>
+            <li>
+              <a href="#">Olympus E-M1 Mark III: Hands-on in Costa Rica</a>
+            </li>
+            <li>
+              <a href="#"
+                >Olympus unveils the E-M1 Mark III, a versatile but iterative
+                pro camera</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p class="header tech-header">
+          <a href="#"> Tech </a>
+          <i class="fa fa-chevron-right"></i>
+        </p>
+        <div class="tech-image">
+          <img src="images/tech.jpg" />
+          <div class="image-text">
+            <h2>MOST POPULAR</h2>
+            <a href="#" class="image-link">
+              Data centers generate the same amount of carbon emissions
+            </a>
+            <h6>The Conversation • 1 day ago</h6>
+          </div>
+        </div>
+        <div class="latest tech-latest">
+          <h2>LATEST</h2>
+          <p>
+            <a href="#" class="latest-link">
+              What designers can learn from Etsy’s minimalist icons
+            </a>
+          </p>
+          <img src="images\tech2.jpg" alt="Tech" />
+        </div>
+        <div class="latest-list tech-list">
+          <ul>
+            <li>
+              <a href="#"
+                >Report: The PS5 is so expensive to make, Sony may sell it at a
+                loss</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Why Tinder’s new safety features won’t end harassment on the
+                platform</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >These 15 matchmaking and social media startups want to change
+                how we connect</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Google’s new AI can intelligently crop videos for any screen
+                size</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >1 in 10 Americans admit to using ‘stalkerware’ to monitor their
+                partners</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p class="header creative-header">
+          <a href="#"> Creative </a>
+          <i class="fa fa-chevron-right"></i>
+        </p>
+        <div class="creative-image">
+          <div class="gradient">
+            <img src="images/creative.jpg" />
+          </div>
+          <div class="image-text">
+            <h2>MOST POPULAR</h2>
+            <a href="#" class="image-link"
+              >This Amazon parody dating site is hilarious… and also kind of
+              creepy</a
+            >
+            <h6>RACHEL KASER • 11 days ago</h6>
+          </div>
+        </div>
+        <div class="latest creative-latest">
+          <h2>LATEST</h2>
+          <p>
+            <a href="#" class="latest-link">
+              Leaked trailer offers a new look at Godfall, the first game
+              announced for PS5
+            </a>
+          </p>
+          <img src="images\creative2.png" alt="Creative" />
+        </div>
+        <div class="latest-list creative-list">
+          <ul>
+            <li>
+              <a href="#"
+                >Instagram’s decision to hide photoshopped images is a
+                disservice to art</a
+              >
+            </li>
+            <li><a href="#">How to design better buttons</a></li>
+            <li>
+              <a href="#"
+                >Giphy debuts Arcade, a platform for making and playing
+                ‘microgames’</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Microsoft’s new font for devs is very aesthetically pleasing
+                (and free)</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >How to build a production and recording studio that fits in a
+                backpack</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p class="header podium-header">
+          <a href="#"> Podium </a>
+          <i class="fa fa-chevron-right"></i>
+        </p>
+        <div class="podium-image">
+          <img src="images/podium.png" />
+          <div class="image-text">
+            <h2>MOST POPULAR</h2>
+            <a href="#" class="image-link"
+              >How to build a survival base in Minecraft</a
+            >
+            <h6>Thomas Williamson • 1 day ago</h6>
+          </div>
+        </div>
+        <div class="latest podium-latest">
+          <h2>LATEST</h2>
+          <p>
+            <a href="#" class="latest-link">
+              Application performance monitoring goes full-stack baby
+            </a>
+          </p>
+          <img src="images\podium2.jpg" alt="Podium" />
+        </div>
+        <div class="latest-list podium-list">
+          <ul>
+            <li>
+              <a href="#"
+                >Everything you need to know about Bees in Minecraft</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Don’t be fooled: Blockchains are not miracle security
+                solutions</a
+              >
+            </li>
+            <li>
+              <a href="#">For AI to succeed, ‘computer says no’ needs to die</a>
+            </li>
+            <li>
+              <a href="#">How to protect your customers’ data after Brexit</a>
+            </li>
+            <li>
+              <a href="#"
+                >Digital trends 2020: Every single stat you need to know about
+                the internet</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p class="header insights-header">
+          <a href="#"> Insights </a>
+          <i class="fa fa-chevron-right"></i>
+        </p>
+        <div class="insights-image">
+          <img src="images/insights.png" />
+          <div class="image-text">
+            <h2>MOST POPULAR</h2>
+            <a href="#" class="image-link"
+              >I’ve worked in a ‘virtual office’ for 3 years – here’s what I’ve
+              learned</a
+            >
+            <h6>Mitch Robinson • 5 hours ago</h6>
+          </div>
+        </div>
+        <div class="latest insights-latest">
+          <h2>LATEST</h2>
+          <p>
+            <a href="#" class="latest-link">
+              T-Mobile’s merger with Sprint is now worth $40 billion, thanks to
+              the bulls
+            </a>
+          </p>
+          <img src="images\insights2.png" alt="Insights" />
+        </div>
+        <div class="latest-list insights-list">
+          <ul>
+            <li>
+              <a href="#"
+                >Why you should wear roller skates to your next networking
+                event</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Tesla’s Long Range Model S gets a boost to run 390 miles
+                between charges</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Satoshi Nakaboto: ‘Craig Wright threatens to sue Bitcoin for
+                using ‘his’ Bitcoin database’</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Monzo is bringing back premium bank accounts to help turn a
+                profit</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >I’ve worked in a ‘virtual office’ for 3 years – here’s what
+                I’ve learned</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p class="header launch-header">
+          <a href="#"> Launch </a>
+          <i class="fa fa-chevron-right"></i>
+        </p>
+        <div class="launch-image">
+          <img src="images/launch.jpg" />
+          <div class="image-text">
+            <h2>MOST POPULAR</h2>
+            <a href="#" class="image-link"
+              >PSA: Amazon Fresh grocery deliveries are now free for US Prime
+              members</a
+            >
+            <h6>ABHIMANYU GHOSHAL • 3 months ago</h6>
+          </div>
+        </div>
+        <div class="latest launch-latest">
+          <h2>LATEST</h2>
+          <p>
+            <a href="#" class="latest-link"
+              >Alexis Ohanian and Serj Tankian team up to help build a social
+              network for Armenia
+            </a>
+          </p>
+          <img src="images\launch2.jpg" alt="launch" />
+        </div>
+        <div class="latest-list launch-list">
+          <ul>
+            <li>
+              <a href="#"
+                >Google Assistant gets its own phone number in India</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Pam and Angela from The Office are re-watching the show for
+                their new podcast</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Bethesda wants you to test its game streaming tech with DOOM on
+                iOS this year</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Mozilla rolls out new automated crypto-jacking filtering in
+                Firefox</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Google announces Stadia, its cross-platform game streaming
+                service</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p class="header distract-header">
+          <a href="#"> Distract </a>
+          <i class="fa fa-chevron-right"></i>
+        </p>
+        <div class="distract-image">
+          <img src="images/distract.jpg" />
+          <div class="image-text">
+            <h2>MOST POPULAR</h2>
+            <a href="#" class="image-link"
+              >Rumor: Call of Duty to launch free ‘Warzone’ battle royale game
+              as early as February 18</a
+            >
+            <h6>TRISTAN GREENE • 9 hours ago</h6>
+          </div>
+        </div>
+        <div class="latest distract-latest">
+          <h2>LATEST</h2>
+          <p>
+            <a href="#" class="latest-link"
+              >Facebook changes its ad rules over Bloomberg’s cringey memes
+            </a>
+          </p>
+          <img src="images\distract2.jpg" alt="Distract" />
+        </div>
+        <div class="latest-list distract-list">
+          <ul>
+            <li>
+              <a href="#"
+                >Canon announces the EOS R5, fixing the original’s biggest
+                problems</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >The legendary Nintendo PlayStation is on auction, and it’s
+                already at $48K (Update: Now at $360K)</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >‘Cool candidate’ Mike Bloomberg begs for your vote with
+                Instagram memes</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Google Earth just released 1,000 beautiful wallpapers you can
+                download for free</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >ViacomCBS reportedly joining the streaming wars… again</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="block">
-        <a href="#">
-          <img src="images/blockfi.jpeg">
-          <h4 class="block-title">BlockFI</h4>
-          <div class="block-details">
-            <h4>$30M</h4>
-            <h6>SERIES B</h6>
-          </div>
-          <div>
-            <a href="#" class="block-tags tags">
-              <p>
-                <i class="fa fa-tag" aria-hidden="true"></i>Financial Services,
-                +3
-              </p>
-              <p>
-                <i class="fa fa-briefcase" aria-hidden="true"></i> Winklevoss
-                Capital, +12
-              </p> 
-              <hr>
-            </a>  
-            <a href="#" class=" text tags">
-              <p>
-                Cryptocurrency lending firm BlockFi raises $30M to expand
-                product offerings <span class="source"> On SiliconANGLE</span>
-              </p>
-            </a>
-          </div>
-        </a>
-      </div>
-      <div class="toast">
-        <a href="#">
-          <img src="images/toast.png">
-          <h4 class="toast-title">Toast, INC.</h4>
-          <div class="toast-details">
-            <h4>$400M</h4>
-            <h6> VENTURE CAPITAL</h6>
-          </div>
-          <div>
-            <a href="#" class="toast-tags tags">
-              <p>
-                <i class="fa fa-tag" aria-hidden="true"></i>Apps,
-                +2
-              </p>
-              <p>
-                <i class="fa fa-briefcase" aria-hidden="true"></i> Bessemer
-                Venture Partners, +3
-              </p>
-              <hr>
-            </a>
-            
-            <a href="#" class="text tags">
-              <p>
-                Toast Lands $400M, Bringing Valuation To Nearly $5B <span class="source"> On Crunchbase News</span>
-              </p>
-            </a>
-          </div>
-        </a>
-      </div>
-      <div class="nova">
-        <a href="#">
-          <img src="images/nova.png">
-          <h4 class="nova-title">Nova Credit</h4>
-          <div class="nova-details">
-            <h4>$50M</h4>
-            <h6> SERIES B</h6>
-          </div>
-          <div>
-            <a href="#" class="nova-tags tags">
-              <p>
-                <i class="fa fa-tag" aria-hidden="true"></i>Finance,
-                +3
-              </p>
-              <p>
-                <i class="fa fa-briefcase" aria-hidden="true"></i> NYCA Partners, +7
-              </p>
-              <hr>
-            </a>
-            
-            <a href="#" class="text tags">
-              <p>
-                Nova Credit: This Cross-Border Consumer Credit Company Just Raised $50 Million Funding <span
-                  class="source"> On Pulse 2.0</span>
-              </p>
-            </a>
-          </div>
-        </a>
-      </div>
-    </div>
-      <div class="latest-section">
-          <p class="header app-header"> 
-            <a href="#"> Apps </a>
-            <i class="fa fa-chevron-right"></i> 
-          </p>
-          <div class="app-image">
-            <h2>MOST POPULAR</h2>
-            <a href="#" class="image-link"> Facebook Lite gets Dark Mode while the main app is still waiting </a>
-            <h6>Napier Lopez • 2 days ago </h6>
-          </div>
-          <div class="latest app-latest">
-            <h2>LATEST</h2>
-            <p><a href="#" class="latest-link">Facebook just released a Pinterest-style app called Hobbi </a></p>
-            <img src="images\app2.jpg" alt="App">
-          </div>
-          <div class="latest-list app-list">
-            <ul>
-              <li><a href="#">Steam rolls out new feature to help you decide what game to play next</a></li>
-              <li><a href="#">Instagram is testing a way to display posts in chronological order</a></li>
-              <li><a href="#">Google’s Area 120 is bringing lightweight games to low-powered devices</a></li>
-              <li><a href="#">Uber test lets you dial a phone number for a ride – no app required</a></li>
-              <li><a href="#">How to play a game on your phone via the Steam Link app</a></li>
-            </ul>
-          </div>
-          <p class="header gear-header"> 
-            <a href="#"> Gear </a>
-            <i class="fa fa-chevron-right"></i> 
-          </p>
-          <div class="gear-image">
-            <h2>MOST POPULAR</h2>
-            <a href="#" class="image-link"> Life with the MacBook Touch Bar is awful and I hate it </a>
-            <h6>Callum Booth • 47 minutes ago </h6>
-          </div>
-          <div class="latest gear-latest">
-            <h2>LATEST</h2>
-            <p><a href="#" class="latest-link"> Report: Microsoft’s Surface Book 3 will arrive this spring </a> </p>
-            <img src="images\gear2.jpg" alt="Gear">
-          </div>
-          <div class="latest-list gear-list">
-            <ul>
-              <li><a href="#">Nope, I refuse to believe this leaked Pixel 5 prototype is real</a></li>
-              <li><a href="#">The new Moto Razr might be the hardest phone to repair ever</a></li>
-              <li><a href="#">US accuses Huawei of stealing trade secrets and racketeering</a></li>
-              <li><a href="#">Olympus E-M1 Mark III: Hands-on in Costa Rica</a></li>
-              <li><a href="#">Olympus unveils the E-M1 Mark III, a versatile but iterative pro camera</a></li>
-            </ul>
-          </div>
-          <p class="header tech-header"> 
-            <a href="#"> Tech </a>
-            <i class="fa fa-chevron-right"></i> 
-          </p>
-          <div class="tech-image">
-            <h2>MOST POPULAR</h2>
-            <a href="#" class="image-link"> Data centers generate the same amount of carbon emissions as global airlines </a>
-            <h6>The Conversation • 1 day ago </h6>
-          </div>
-          <div class="latest tech-latest">
-            <h2>LATEST</h2>
-            <p><a href="#" class="latest-link"> What designers can learn from Etsy’s minimalist icons </a> </p>
-            <img src="images\tech2.jpg" alt="Tech">
-          </div>
-          <div class="latest-list tech-list">
-            <ul>
-              <li><a href="#">Report: The PS5 is so expensive to make, Sony may sell it at a loss</a></li>
-              <li><a href="#">Why Tinder’s new safety features won’t end harassment on the platform</a></li>
-              <li><a href="#">These 15 matchmaking and social media startups want to change how we connect</a></li>
-              <li><a href="#">Google’s new AI can intelligently crop videos for any screen size</a></li>
-              <li><a href="#">1 in 10 Americans admit to using ‘stalkerware’ to monitor their partners</a></li>
-            </ul>
-          </div>
-          <p class="header creative-header"> 
-            <a href="#"> Creative </a>
-            <i class="fa fa-chevron-right"></i> 
-          </p>
-          <div class="creative-image">
-            <h2>MOST POPULAR</h2>
-            <a href="#" class="image-link">This Amazon parody dating site is hilarious… and also kind of creepy</a>
-            <h6> RACHEL KASER • 11 days ago </h6>
-          </div>
-          <div class="latest creative-latest">
-            <h2>LATEST</h2>
-            <p><a href="#" class="latest-link"> Leaked trailer offers a new look at Godfall, the first game announced for PS5 </a> </p>
-            <img src="images\creative2.png" alt="Creative">
-          </div>
-          <div class="latest-list creative-list">
-            <ul>
-              <li><a href="#">Instagram’s decision to hide photoshopped images is a disservice to art</a></li>
-              <li><a href="#">How to design better buttons</a></li>
-              <li><a href="#">Giphy debuts Arcade, a platform for making and playing ‘microgames’</a></li>
-              <li><a href="#">Microsoft’s new font for devs is very aesthetically pleasing (and free)</a></li>
-              <li><a href="#">How to build a production and recording studio that fits in a backpack</a></li>
-            </ul>
-          </div>
-          <p class="header podium-header"> 
-            <a href="#"> Podium </a>
-            <i class="fa fa-chevron-right"></i> 
-          </p>
-          <div class="podium-image">
-            <h2>MOST POPULAR</h2>
-            <a href="#" class="image-link">How to build a survival base in Minecraft</a>
-            <h6> Thomas Williamson • 1 day ago </h6>
-          </div>
-          <div class="latest podium-latest">
-            <h2>LATEST</h2>
-            <p><a href="#" class="latest-link"> Application performance monitoring goes full-stack baby </a> </p>
-            <img src="images\podium2.jpg" alt="Podium">
-          </div>
-          <div class="latest-list podium-list">
-            <ul>
-              <li><a href="#">Everything you need to know about Bees in Minecraft</a></li>
-              <li><a href="#">Don’t be fooled: Blockchains are not miracle security solutions</a></li>
-              <li><a href="#">For AI to succeed, ‘computer says no’ needs to die</a></li>
-              <li><a href="#">How to protect your customers’ data after Brexit</a></li>
-              <li><a href="#">Digital trends 2020: Every single stat you need to know about the internet</a></li>
-            </ul>
-          </div>
-          <p class="header insights-header"> 
-            <a href="#"> Insights </a>
-            <i class="fa fa-chevron-right"></i> 
-          </p>
-          <div class="insights-image">
-            <h2>MOST POPULAR</h2>
-            <a href="#" class="image-link">I’ve worked in a ‘virtual office’ for 3 years – here’s what I’ve learned</a>
-            <h6>Mitch Robinson • 5 hours ago </h6>
-          </div>
-          <div class="latest insights-latest">
-            <h2>LATEST</h2>
-            <p><a href="#" class="latest-link"> T-Mobile’s merger with Sprint is now worth $40 billion, thanks to the bulls </a> </p>
-            <img src="images\insights2.png" alt="Insights">
-          </div>
-          <div class="latest-list insights-list">
-            <ul>
-              <li><a href="#">Why you should wear roller skates to your next networking event</a></li>
-              <li><a href="#">Tesla’s Long Range Model S gets a boost to run 390 miles between charges</a></li>
-              <li><a href="#">Satoshi Nakaboto: ‘Craig Wright threatens to sue Bitcoin for using ‘his’ Bitcoin database’</a></li>
-              <li><a href="#">Monzo is bringing back premium bank accounts to help turn a profit</a></li>
-              <li><a href="#">I’ve worked in a ‘virtual office’ for 3 years – here’s what I’ve learned</a></li>
-            </ul>
-          </div>
-          <p class="header launch-header"> 
-            <a href="#"> Launch </a>
-            <i class="fa fa-chevron-right"></i> 
-          </p>
-          <div class="launch-image">
-            <h2>MOST POPULAR</h2>
-            <a href="#" class="image-link">PSA: Amazon Fresh grocery deliveries are now free for US Prime members</a>
-            <h6>ABHIMANYU GHOSHAL • 3 months ago </h6>
-          </div>
-          <div class="latest launch-latest">
-            <h2>LATEST</h2>
-            <p><a href="#" class="latest-link">Alexis Ohanian and Serj Tankian team up to help build a social network for Armenia </a> </p>
-            <img src="images\launch2.jpg" alt="launch">
-          </div>
-          <div class="latest-list launch-list">
-            <ul>
-              <li><a href="#">Google Assistant gets its own phone number in India</a></li>
-              <li><a href="#">Pam and Angela from The Office are re-watching the show for their new podcast</a></li>
-              <li><a href="#">Bethesda wants you to test its game streaming tech with DOOM on iOS this year</a></li>
-              <li><a href="#">Mozilla rolls out new automated crypto-jacking filtering in Firefox</a></li>
-              <li><a href="#">Google announces Stadia, its cross-platform game streaming service</a></li>
-            </ul>
-          </div>
-          <p class="header distract-header"> 
-            <a href="#"> Distract </a>
-            <i class="fa fa-chevron-right"></i> 
-          </p>
-          <div class="launch-image">
-            <h2>MOST POPULAR</h2>
-            <a href="#" class="image-link">Rumor: Call of Duty to launch free ‘Warzone’ battle royale game as early as February 18</a>
-            <h6>TRISTAN GREENE • 9 hours ago </h6>
-          </div>
-          <div class="latest distract-latest">
-            <h2>LATEST</h2>
-            <p><a href="#" class="latest-link">Facebook changes its ad rules over Bloomberg’s cringey memes </a> </p>
-            <img src="images\distract2.jpg" alt="Distract">
-          </div>
-          <div class="latest-list distract-list">
-            <ul>
-              <li><a href="#">Canon announces the EOS R5, fixing the original’s biggest problems</a></li>
-              <li><a href="#">The legendary Nintendo PlayStation is on auction, and it’s already at $48K (Update: Now at $360K)</a></li>
-              <li><a href="#">‘Cool candidate’ Mike Bloomberg begs for your vote with Instagram memes</a></li>
-              <li><a href="#">Google Earth just released 1,000 beautiful wallpapers you can download for free</a></li>
-              <li><a href="#">ViacomCBS reportedly joining the streaming wars… again</a></li>
-            </ul>
-          </div>
-      </div>
-  </main>
-  <footer>
-    <div></div>
-    <div></div>
-  </footer>
-</body>
-
+    </main>
+    <footer>
+      <div></div>
+      <div></div>
+    </footer>
+  </body>
 </html>
