@@ -882,7 +882,75 @@ main {
 }
 
 /* Latest-section */
+.latest-section .header a, i {
+  font-family: "Avalon", sans-serif;
+  font-size: 25px;
+  color: red;
+}
 
+.latest-section h2 {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px ;
+  font-weight: 400 ;
+  color: rgb(85, 85, 85);
+}
+
+.latest-section h2 .image-links {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  line-height: 22px;
+}
+
+.latest-section .image-links:hover{
+  text-decoration: underline;
+}
+
+.latest-section h6 {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.latest-section .latest h2 {
+  font-family: Shentox, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(255, 68, 34);
+}
+
+.latest-section .latest h2 p a {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(255, 68, 34);
+}
+
+.latest-section .latest h2 p a:hover {
+  text-decoration: underline;
+}
+
+.latest-section .latest img {
+  height: 50px;
+  width: 50px;
+}
+
+.latest-section .latest-list ul li {
+  list-style-type: disc ;
+  color: red;
+}
+
+.latest-section .latest-list ul li a {
+  color: black;
+}
+
+.latest-section {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 3fr) 1fr;
+  grid-template-rows: 30px 240px 50px repeat(5, 30px);
+}
 
 /* FOOTER*/
 footer {
