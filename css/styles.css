@@ -882,7 +882,8 @@ main {
 }
 
 /* Latest-section */
-.latest-section .header a, i {
+.latest-section .header a,
+i {
   font-family: "Avalon", sans-serif;
   font-size: 25px;
   color: red;
@@ -890,20 +891,20 @@ main {
 
 .latest-section h2 {
   font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
-  font-size: 14px ;
-  font-weight: 400 ;
-  color: rgb(85, 85, 85);
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
 }
 
 .latest-section .image-link {
   font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
   font-size: 20px;
   font-weight: 700;
-  color: rgb(85, 85, 85); /*set color to white after doing background image*/
+  color: white; /*set color to white after doing background image*/
   line-height: 22px;
 }
 
-.latest-section .image-link:hover{
+.latest-section .image-link:hover {
   text-decoration: underline;
 }
 
@@ -919,6 +920,7 @@ main {
   font-size: 13px;
   font-weight: 500;
   color: rgb(255, 68, 34);
+  z-index: 1;
 }
 
 .latest-section .latest-link {
@@ -926,6 +928,7 @@ main {
   font-weight: 700;
   font-size: 14px;
   color: rgb(255, 68, 34);
+  z-index: 1;
 }
 
 .latest-section .latest-link:hover {
@@ -935,21 +938,41 @@ main {
 .latest-section .latest img {
   height: 50px;
   width: 50px;
+  z-index: 1;
 }
 
 .latest-section .latest-list ul li {
-  list-style-type: disc ;
+  list-style-type: disc;
   color: red;
 }
 
 .latest-section .latest-list ul li a {
   color: black;
 }
+.latest-section img {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+/*.creative-image .gradient{
+background-image:linear-gradient( white 50%,black 50%);
+z-index: 2;
+}*/
+
+.image-text {
+  margin-top: -100px;
+  padding-left: 20px;
+}
 
 .latest-section {
   display: grid;
   grid-template-columns: 1fr repeat(3, 3fr) 1fr;
-  grid-template-rows: 40px 240px 100px 170px 20px 40px 240px 100px 170px  20px 40px 240px 100px 170px;
+  grid-template-rows: 40px 240px 100px 170px 20px 40px 240px 100px 170px 20px 40px 240px 100px 170px;
+  grid-column-gap: 20px;
+  padding-top: 20px;
+  padding-left: 14px;
+  padding-right: 14px;
+  grid-row-gap: 10px;
   background-color: white;
 }
 
@@ -958,16 +981,9 @@ main {
   grid-row: 1;
 }
 
-/*add image*/
-
 .latest-section .app-image {
   grid-column: 2;
   grid-row: 2;
-  background-image: url("images\app.png");
-  background-repeat: no-repeat;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .latest-section .app-latest {
