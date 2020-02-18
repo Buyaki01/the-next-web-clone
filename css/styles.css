@@ -949,13 +949,30 @@ main {
 .latest-section {
   display: grid;
   grid-template-columns: 1fr repeat(3, 3fr) 1fr;
-  grid-template-rows: 40px 240px 50px repeat(5, 30px);
+  grid-template-rows: 40px 240px 100px 170px 20px 240px 100px 170px  20px 240px 100px 170px;
   background-color: white;
 }
 
 .latest-section .app-header {
   grid-column: 2;
   grid-row: 1;
+}
+
+/*add image*/
+
+.latest-section .app-image {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.latest-section .app-latest {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.latest-section .app-list {
+  grid-column: 2;
+  grid-row: 4;
 }
 
 /* FOOTER*/
