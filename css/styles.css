@@ -1601,6 +1601,210 @@ i {
  
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .latest-section {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 450px 100px 230px 20px 40px 450px 100px 230px 20px 40px 450px 100px 230px 20px 40px 450px 100px 230px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-column-gap: 20px;
+  }
+
+  .latest-section .app-header {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .latest-section .app-image {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  /* Created a sub-grid */
+  .latest-section .app-latest {
+    grid-column: 1;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100px;
+  }
+  
+  .latest-section .app-list {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .latest-section .gear-header {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .latest-section .gear-image {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  /* Created a sub-grid */
+  .latest-section .gear-latest {
+    grid-column: 2;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100px;
+  }
+  
+  .latest-section .gear-list {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .latest-section .tech-header {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  
+  .latest-section .tech-image {
+    grid-column: 1;
+    grid-row: 7;
+  }
+  
+  /*Created a sub-grid */
+  .latest-section .tech-latest {
+    grid-column: 1;
+    grid-row: 8;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100px;
+  }
+  
+  .latest-section .tech-list {
+    grid-column: 1;
+    grid-row: 9;
+  }
+  
+
+  .latest-section .creative-header {
+    grid-column: 2;
+    grid-row: 6;
+  }
+  
+  .latest-section .creative-image {
+    grid-column: 2;
+    grid-row: 7;
+  }
+  
+  /* Created a sub-grid */
+  .latest-section .creative-latest {
+    grid-column: 2;
+    grid-row: 8;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100px;
+  }
+  
+  .latest-section .creative-list {
+    grid-column: 2;
+    grid-row: 9;
+  }
+
+  .latest-section .podium-header {
+    grid-column: 1;
+    grid-row: 11;
+  }
+  
+  .latest-section .podium-image {
+    grid-column: 1;
+    grid-row: 12;
+  }
+  
+  /* Created a sub-grid */
+  .latest-section .podium-latest {
+    grid-column: 1;
+    grid-row: 13;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100px;
+  }
+  
+  .latest-section .podium-list {
+    grid-column: 1;
+    grid-row: 14;
+  }
+
+  .latest-section .insights-header {
+    grid-column: 2;
+    grid-row: 11;
+  }
+  
+  .latest-section .insights-image {
+    grid-column: 2;
+    grid-row: 12;
+  }
+  
+  /*Created a sub-grid */
+  .latest-section .insights-latest {
+    grid-column: 2;
+    grid-row: 13;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100px;
+  }
+  
+  .latest-section .insights-list {
+    grid-column: 2;
+    grid-row: 14;
+  }
+
+  .latest-section .launch-header {
+    grid-column: 1;
+    grid-row: 16;
+  }
+  
+  .latest-section .launch-image {
+    grid-column: 1;
+    grid-row: 17;
+  }
+  
+  /* Created a sub-grid */
+  .latest-section .launch-latest {
+    grid-column: 1;
+    grid-row: 18;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100px;
+  }
+  
+  .latest-section .launch-list {
+    grid-column: 1;
+    grid-row: 19;
+  }
+  
+  .latest-section .distract-header {
+    grid-column: 2;
+    grid-row: 16;
+  }
+  
+  .latest-section .distract-image {
+    grid-column: 2;
+    grid-row: 17;
+  }
+  
+  /*Created a sub-grid */
+  .latest-section .distract-latest {
+    grid-column: 2;
+    grid-row: 18;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100px;
+  }
+  
+  .latest-section .distract-list {
+    grid-column: 2;
+    grid-row: 19;
+  }
+}
+
 /* FOOTER
 footer {
   width: 100%;
