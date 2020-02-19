@@ -109,19 +109,21 @@ nav {
     height: 100%;
     width: 66px;
   }
-  
+
   .nav-bar {
     height: 115px;
   }
-  /*nav bar 1*/
+
+  /* nav bar 1 */
   .nav-bar .nav-bar1 {
     display: none;
   }
 
-  /*nav bar 2*/
+  /* nav bar 2 */
   .nav-bar .nav-bar2 {
     display: none;
   }
+
   .hidden-navbar {
     display: flex;
     flex-direction: row;
@@ -141,9 +143,11 @@ nav {
     padding: 20px;
     border-left: 1px solid rgb(234, 234, 234);
   }
+
   .hidden-icons .search {
     color: rgb(189, 189, 189);
   }
+
   .hidden-icons .menu {
     color: red;
   }
@@ -153,8 +157,8 @@ nav {
   }
 }
 
-@media only screen and (min-width: 768px ) and (max-width: 1023px) {
-  /*Nav bar 1*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Nav bar 1 */
   .nav-bar1 .nav-bar1-2 {
     display: none;
   }
@@ -166,7 +170,8 @@ nav {
 
   .nav-bar1 .nav-bar1-1 {
     display: flex;
-    /*justify-content: flex-end;*/
+
+    /* justify-content: flex-end; */
     align-items: center;
     flex-wrap: nowrap;
     margin-left: 65px;
@@ -178,7 +183,7 @@ nav {
     font-size: 12px;
   }
 
-  /*nav bar 2*/
+  /* nav bar 2 */
   .nav-bar .nav-bar2 {
     display: flex;
     justify-content: space-between;
@@ -1899,194 +1904,225 @@ i {
   font-size: 10px;
 }
 
-/*MEDIA QUERIES FOR LATEST DEALS*/
+/* MEDIA QUERIES FOR LATEST DEALS */
 
 @media only screen and (max-width: 767px) {
-
-
-  .latest-deals img, .bluetooth-image img {
+  .latest-deals img,
+  .bluetooth-image img {
     height: 100%;
     width: 100%;
-    
-  }
-
-  .latest-deals img, .bluetooth-image img{
     float: left;
   }
 
-.latest-deals{
-display: grid;
-grid-template-columns: 13% 85%;
-grid-template-rows: 50px repeat(9,75px);
-grid-row-gap: 10px;
-background-color: white;
-padding-left: 20px;
-}
-
-.latest-deals .deals-header {
-  grid-column: 1/span 2;
-  grid-row: 1;
-}
-
-.latest-deals .cisco-image {
-  grid-column: 1;
-  grid-row: 2;
-}
-  
-.latest-deals .cisco-text {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.latest-deals .microsoft-image {
-  grid-column: 1;
-  grid-row: 3;
-}
-  .latest-deals .microsoft-text{
-    grid-column: 2;
-  grid-row: 3;
+  .latest-deals {
+    display: grid;
+    grid-template-columns: 13% 85%;
+    grid-template-rows: 50px repeat(9, 75px);
+    grid-row-gap: 10px;
+    background-color: white;
+    padding-left: 20px;
   }
 
-  .latest-deals .freebie-image{
+  .latest-deals .deals-header {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .latest-deals .cisco-image {
     grid-column: 1;
-  grid-row: 4;
+    grid-row: 2;
   }
 
-  .latest-deals .freebie-text{
+  .latest-deals .cisco-text {
     grid-column: 2;
-  grid-row: 4;
+    grid-row: 2;
   }
 
-  .latest-deals .aws-image{
+  .latest-deals .microsoft-image {
     grid-column: 1;
-  grid-row: 5;
+    grid-row: 3;
   }
 
-  .latest-deals .aws-text{
+  .latest-deals .microsoft-text {
     grid-column: 2;
-  grid-row: 5;
+    grid-row: 3;
   }
 
-  .latest-deals .bluetooth-image{
+  .latest-deals .freebie-image {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .latest-deals .freebie-text {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .latest-deals .aws-image {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .latest-deals .aws-text {
+    grid-column: 2;
+    grid-row: 5;
+  }
+
+  .latest-deals .bluetooth-image {
     grid-column: 1;
     grid-row: 6;
   }
 
-  .latest-deals .bluetooth-text{
+  .latest-deals .bluetooth-text {
     grid-column: 2;
     grid-row: 6;
   }
 
-  .latest-deals .vpn-image{
+  .latest-deals .vpn-image {
     grid-column: 1;
     grid-row: 7;
   }
 
-  .latest-deals .vpn-text{
+  .latest-deals .vpn-text {
     grid-column: 2;
     grid-row: 7;
   }
 
-  .latest-deals .library-image{
+  .latest-deals .library-image {
     grid-column: 1;
     grid-row: 8;
   }
 
-  .latest-deals .library-text{
+  .latest-deals .library-text {
     grid-column: 2;
     grid-row: 8;
   }
 
-  .latest-deals .shaw-image{
+  .latest-deals .shaw-image {
     grid-column: 1;
     grid-row: 9;
   }
 
-  .latest-deals .shaw-text{
+  .latest-deals .shaw-text {
     grid-column: 2;
     grid-row: 9;
   }
 
-  .latest-deals .deals-advert{
-    grid-column: 1/span 2;
+  .latest-deals .deals-advert {
+    grid-column: 1 / span 2;
     grid-row: 10;
   }
 }
 
-
-
-
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .latest-deals img {
+    height: 150px;
+    width: 90%;
+  }
 
-  /*
-  .latest-news {
+  .latest-deals .text a {
+    font-size: 13px;
+  }
+
+  .latest-deals {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px repeat(3, 240px) 150px;
+    grid-template-rows: 50px 150px 60px 20px 150px 60px 20px 150px 60px 20px 150px;
     grid-column-gap: 10px;
     background-color: white;
     padding-left: 20px;
   }
 
-  .latest-news img {
-    height: 150px;
-    width: 90%;
-  }
-
-  .latest-news .news-title {
+  .latest-deals .deals-header {
     grid-column: 1 / span 3;
     grid-row: 1;
   }
 
-  .latest-news .book {
+  .latest-deals .cisco-image {
     grid-column: 1;
     grid-row: 2;
   }
 
-  .latest-news .game {
+  .latest-deals .cisco-text {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .latest-deals .microsoft-image {
     grid-column: 2;
     grid-row: 2;
   }
 
-  .latest-news .candy {
+  .latest-deals .microsoft-text {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .latest-deals .freebie-image {
     grid-column: 3;
     grid-row: 2;
   }
 
-  .latest-news .whatsapp {
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-  .latest-news .instagram {
-    grid-column: 2;
-    grid-row: 3;
-  }
-
-  .latest-news .bitcoin {
+  .latest-deals .freebie-text {
     grid-column: 3;
     grid-row: 3;
   }
 
-  .latest-news .stalkerware {
+  .latest-deals .aws-image {
     grid-column: 1;
-    grid-row: 4;
-  }
-
-  .latest-news .google {
-    grid-column: 2;
-    grid-row: 4;
-  }
-
-  .latest-news .ad {
     grid-row: 5;
+  }
+
+  .latest-deals .aws-text {
+    grid-column: 1;
+    grid-row: 6;
+  }
+
+  .latest-deals .bluetooth-image {
+    grid-column: 2;
+    grid-row: 5;
+  }
+
+  .latest-deals .bluetooth-text {
+    grid-column: 2;
+    grid-row: 6;
+  }
+
+  .latest-deals .vpn-image {
+    grid-column: 3;
+    grid-row: 5;
+  }
+
+  .latest-deals .vpn-text {
+    grid-column: 3;
+    grid-row: 6;
+  }
+
+  .latest-deals .library-image {
+    grid-column: 1;
+    grid-row: 8;
+  }
+
+  .latest-deals .library-text {
+    grid-column: 1;
+    grid-row: 9;
+  }
+
+  .latest-deals .shaw-image {
+    grid-column: 2;
+    grid-row: 8;
+  }
+
+  .latest-deals .shaw-text {
+    grid-column: 2;
+    grid-row: 9;
+  }
+
+  .latest-deals .deals-advert {
     grid-column: 1 / span 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
+    grid-row: 11;
   }
 }
+
 /* FOOTER
 footer {
   width: 100%;
