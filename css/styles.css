@@ -197,10 +197,7 @@ nav {
 }
 
 @media only screen and (min-width: 824px) and (max-width: 1023px) {
-
- 
- 
-  /*Nav bar 1*/
+/*Nav bar 1*/
 .nav-bar1{
   display:grid;
   grid-template-columns: 110px 60% 40%;
@@ -1807,6 +1804,47 @@ i {
 }
 
 /* latest deals */
+.latest-deals .deals-header a{
+  color: rgb(255, 68, 34);
+  font-family: Avalon, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.latest-deals .deals-header i {
+  color: rgb(255, 68, 34);
+}
+
+.latest-deals .deals-header a:hover{
+  color: black;
+}
+
+.latest-deals .deals-header i:hover{
+  color: black;
+}
+
+.latest-deals .text a {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  color: black;
+}
+
+.latest-deals .text a:hover {
+  color: rgb(255, 68, 34);
+  text-decoration: underline;
+}
+
+.latest-deals h6 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  color:  rgb(85, 85, 85);
+}
+
+.latest-deals h6 span {
+  text-decoration: line-through;
+}
 
 /* FOOTER
 footer {
