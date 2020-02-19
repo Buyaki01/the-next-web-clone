@@ -148,10 +148,18 @@ nav {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 823px){
+  .nav-logo img {
+    height: 100%;
+    width: 100px;
+    margin-right: 20px;
+  }
+  
+
   /*Nav bar 1*/
   .nav-bar1 .nav-bar1-2 {
     display: none;
+ 
   }
   .nav-bar1 .nav-bar1-1 {
     display: flex;
@@ -159,7 +167,7 @@ nav {
     align-items: center;
     flex-wrap: nowrap;
     margin-left: 65px;
-    margin-right: -60px;
+    margin-right: -65px;
   }
 
   .nav-bar1 a {
@@ -171,11 +179,11 @@ nav {
   .nav-bar .nav-bar2 {
     display: flex;
     justify-content: space-between;
-    margin-left: 60px;
+   margin-left: 105px;
   }
 
   .nav-bar2 .nav-links {
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
   }
 
@@ -186,6 +194,77 @@ nav {
     margin-top: -40px;
     height: 90px;
   }
+}
+
+@media only screen and (min-width: 824px) and (max-width: 1023px) {
+
+ 
+ 
+  /*Nav bar 1*/
+.nav-bar1{
+  display:grid;
+  grid-template-columns: 110px 60% 40%;
+  grid-template-rows: 40px;
+}
+
+.nav-logo img {
+  height: 100%;
+  width: 100px;
+  margin-right: 20px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+  .nav-bar1 .nav-bar1-1 {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-left:100px;
+    margin-right:-200px;
+    padding-right: 0;
+    position: absolute;
+
+  }
+
+  .nav-bar1 .nav-bar1-2 {
+
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ 
+  }
+
+  .nav-bar1 a {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+
+  }
+
+  /*nav bar 2*/
+  .nav-bar .nav-bar2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 95px;
+  
+  }
+
+  .nav-bar2 .nav-links {
+    font-size: 11px;
+    display: flex;
+  }
+
+  .hidden-navbar .nav-logo {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    margin-top: -40px;
+    height: 90px;
+  }
+  
 }
 
 /*MAIN CONTENT*/
