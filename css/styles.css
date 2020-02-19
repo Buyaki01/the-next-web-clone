@@ -159,7 +159,6 @@ nav {
     margin-right: 20px;
   }
 
-
   /* Nav bar 1 */
   .nav-bar1 .nav-bar1-2 {
     display: none;
@@ -274,12 +273,11 @@ main {
 .cover {
   display: block;
   height: 100%;
-  background-image:
-    linear-gradient(
-      170deg,
-      rgb(207, 109, 102) 33%,
-      rgba(0, 212, 255, 0) 67%
-    );
+  background-image: linear-gradient(
+    170deg,
+    rgb(207, 109, 102) 33%,
+    rgba(0, 212, 255, 0) 67%
+  );
   padding: 20px;
 }
 
@@ -288,22 +286,19 @@ main {
 }
 
 .articles-one {
-  background-image:
-    linear-gradient(rgba(182, 182, 34, 0.034), rgb(0, 0, 0)),
+  background-image: linear-gradient(rgba(182, 182, 34, 0.034), rgb(0, 0, 0)),
     url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/05/Facebook-Dating-796x417.jpg);
 }
 
 .articles-two {
-  background-image:
-    linear-gradient(rgba(211, 211, 211, 0.034), rgb(0, 0, 0)),
+  background-image: linear-gradient(rgba(211, 211, 211, 0.034), rgb(0, 0, 0)),
     url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Redbox-Free-Live-TV-796x417.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .articles-three {
-  background-image:
-    linear-gradient(rgba(211, 211, 211, 0.034), rgb(0, 0, 0)),
+  background-image: linear-gradient(rgba(211, 211, 211, 0.034), rgb(0, 0, 0)),
     url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FUntitled-design-19.png&signature=3e2100e5eac8f91ddbf95aed3ffa27e7);
   background-position: center;
   background-size: cover;
@@ -1496,7 +1491,6 @@ i {
     grid-row: 14;
   }
 
-
   .latest-section .creative-header {
     grid-column: 1;
     grid-row: 16;
@@ -1700,7 +1694,6 @@ i {
     grid-row: 9;
   }
 
-
   .latest-section .creative-header {
     grid-column: 2;
     grid-row: 6;
@@ -1875,7 +1868,7 @@ i {
 }
 
 .latest-deals .deals-header {
-  grid-column: 2/ span 2;
+  grid-column: 2 / span 2;
   grid-row: 1;
 }
 
@@ -1962,15 +1955,200 @@ i {
 .latest-deals .deals-advert {
   grid-row: 8;
   grid-column: 3 / span 2;
-
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 10px;
 }
 
+/*MEDIA QUERIES FOR LATEST DEALS*/
+
+@media only screen and (max-width: 767px) {
 
 
+  .latest-deals img, .bluetooth-image img {
+    height: 100%;
+    width: 100%;
+    
+  }
+
+  .latest-deals img, .bluetooth-image img{
+    float: left;
+  }
+
+.latest-deals{
+display: grid;
+grid-template-columns: 13% 85%;
+grid-template-rows: 50px repeat(9,75px);
+grid-row-gap: 10px;
+background-color: white;
+padding-left: 20px;
+}
+
+.latest-deals .deals-header {
+  grid-column: 1/span 2;
+  grid-row: 1;
+}
+
+.latest-deals .cisco-image {
+  grid-column: 1;
+  grid-row: 2;
+}
+  
+.latest-deals .cisco-text {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.latest-deals .microsoft-image {
+  grid-column: 1;
+  grid-row: 3;
+}
+  .latest-deals .microsoft-text{
+    grid-column: 2;
+  grid-row: 3;
+  }
+
+  .latest-deals .freebie-image{
+    grid-column: 1;
+  grid-row: 4;
+  }
+
+  .latest-deals .freebie-text{
+    grid-column: 2;
+  grid-row: 4;
+  }
+
+  .latest-deals .aws-image{
+    grid-column: 1;
+  grid-row: 5;
+  }
+
+  .latest-deals .aws-text{
+    grid-column: 2;
+  grid-row: 5;
+  }
+
+  .latest-deals .bluetooth-image{
+    grid-column: 1;
+    grid-row: 6;
+  }
+
+  .latest-deals .bluetooth-text{
+    grid-column: 2;
+    grid-row: 6;
+  }
+
+  .latest-deals .vpn-image{
+    grid-column: 1;
+    grid-row: 7;
+  }
+
+  .latest-deals .vpn-text{
+    grid-column: 2;
+    grid-row: 7;
+  }
+
+  .latest-deals .library-image{
+    grid-column: 1;
+    grid-row: 8;
+  }
+
+  .latest-deals .library-text{
+    grid-column: 2;
+    grid-row: 8;
+  }
+
+  .latest-deals .shaw-image{
+    grid-column: 1;
+    grid-row: 9;
+  }
+
+  .latest-deals .shaw-text{
+    grid-column: 2;
+    grid-row: 9;
+  }
+
+  .latest-deals .deals-advert{
+    grid-column: 1/span 2;
+    grid-row: 10;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  /*
+  .latest-news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px repeat(3, 240px) 150px;
+    grid-column-gap: 10px;
+    background-color: white;
+    padding-left: 20px;
+  }
+
+  .latest-news img {
+    height: 150px;
+    width: 90%;
+  }
+
+  .latest-news .news-title {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+  }
+
+  .latest-news .book {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .latest-news .game {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .latest-news .candy {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .latest-news .whatsapp {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .latest-news .instagram {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .latest-news .bitcoin {
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .latest-news .stalkerware {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .latest-news .google {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .latest-news .ad {
+    grid-row: 5;
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  }
+}
 /* FOOTER
 footer {
   width: 100%;
