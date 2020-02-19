@@ -1602,10 +1602,11 @@ i {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
   .latest-section {
-    display: flex;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40px 450px 100px 230px 20px 40px 450px 100px 230px 20px 40px 450px 100px 230px 20px 40px 450px 100px 230px 20px;
+    grid-template-rows: 40px 350px 100px 230px 20px 40px 350px 100px 230px 20px 40px 350px 100px 230px 20px 40px 350px 100px 230px 20px;
     padding-left: 20px;
     padding-right: 20px;
     grid-column-gap: 20px;
