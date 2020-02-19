@@ -492,6 +492,10 @@ margin-left: 10px;
   color: black;
 }
 
+.latest-news .news-title i:hover {
+  color: black;
+}
+
 .latest-news .news-title .fa {
   font-size: 17px;
 }
@@ -509,6 +513,11 @@ margin-left: 10px;
   font-size: 12px;
   color: rgb(170, 170, 170);
   font-weight: 700px;
+}
+
+.latest-news strong:hover{
+  color: red;
+  text-decoration: underline;
 }
 
 .latest-news {
@@ -655,6 +664,7 @@ margin-left: 10px;
     grid-template-rows: 50px repeat(3, 240px) 150px;
     grid-column-gap: 10px;
     background-color: white;
+    padding-left: 20px;
   }
 
   .latest-news img {
@@ -724,6 +734,10 @@ margin-left: 10px;
 }
 
 .latest-funding .funding-title p:hover {
+  color: black;
+}
+
+.latest-funding .funding-title i:hover {
   color: black;
 }
 
@@ -1089,6 +1103,14 @@ i {
   color: red;
 }
 
+.latest-section .header a:hover{
+  color: black;
+}
+
+.latest-section .header i:hover{
+  color: black;
+}
+
 .latest-section h2 {
   font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
@@ -1172,10 +1194,6 @@ i {
   height: 100%;
   z-index: -1;
 }
-/*.creative-image .gradient{
-background-image:linear-gradient( white 50%,black 50%);
-z-index: 2;
-}*/
 
 .image-text {
   margin-top: -100px;
