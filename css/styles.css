@@ -2130,13 +2130,13 @@ i {
 /* FOOTER */
 footer {
   width: 100%;
-  height: 300px;
+  height: 250px;
   text-align: center;
 }
 
 footer .footer-one {
   background-color: rgb(19, 19, 19);
-  height: 200px;
+  height: 150px;
 }
 
 .footer-icons li,
@@ -2213,4 +2213,33 @@ footer .footer-two {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .footer-one{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 70% 30%;
+  }
+
+  .footer-two{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+  }
+
+  .footer-two p{
+    grid-column: 2;
+  }
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer-one{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 70% 30%;
+  }
+
 }
