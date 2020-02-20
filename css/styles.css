@@ -36,6 +36,13 @@ nav {
   align-items: center;
 }
 
+.footer-two p,
+a {
+  color: rgb(169, 169, 169);
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+}
+
 .nav-bar1 a {
   color: rgb(255, 255, 255);
 }
@@ -452,8 +459,53 @@ main {
   line-height: 18px;
 }
 
+.block .text p {
+  line-height: 18px;
+}
+
+.toast .text p {
+  line-height: 18px;
+}
+
+.nova .text p {
+  line-height: 18px;
+}
+
 .latest-news .news-title p:hover {
   color: black;
+}
+
+.footer-links a {
+  color: rgb(169, 169, 169);
+  font-family: "Shentox", sans-serif;
+  font-size: 13px;
+  font-weight: 200;
+}
+
+.footer-icons li a {
+  background-color: rgb(51, 51, 51);
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.latest-section .header a,
+i {
+  font-family: "Avalon", sans-serif;
+  font-size: 25px;
+  color: red;
+}
+
+.footer-icons i {
+  color: rgb(255, 255, 255);
+}
+
+.latest-deals .deals-header i {
+  color: rgb(255, 68, 34);
 }
 
 .latest-news .news-title i:hover {
@@ -545,6 +597,7 @@ main {
     height: 75px;
     width: 100px;
     padding-right: 10px;
+    float: left;
   }
 
   .latest-news {
@@ -554,10 +607,6 @@ main {
     grid-row-gap: 10px;
     background-color: white;
     padding-left: 20px;
-  }
-
-  .latest-news img {
-    float: left;
   }
 
   .latest-news .news-title {
@@ -708,6 +757,24 @@ main {
   padding-right: 10px;
 }
 
+.latest-deals .deals-header a {
+  color: rgb(255, 68, 34);
+  font-family: Avalon, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.latest-deals .text a {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  color: black;
+}
+
+.latest-section .latest-list ul li a {
+  color: grey;
+}
+
 .latest-funding .funding-links a:hover {
   color: black;
 }
@@ -815,6 +882,20 @@ main {
   color: black;
 }
 
+.latest-section h6 {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.latest-deals h6 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  color: rgb(85, 85, 85);
+}
+
 .elliptic .elliptic-details h6 {
   margin-left: -10px;
 }
@@ -868,10 +949,6 @@ main {
   justify-content: space-around;
 }
 
-.block .text p {
-  line-height: 18px;
-}
-
 .latest-funding .toast {
   grid-row: 2;
   grid-column: 4;
@@ -914,10 +991,6 @@ main {
   justify-content: space-around;
 }
 
-.toast .text p {
-  line-height: 18px;
-}
-
 .latest-funding .nova {
   grid-row: 2;
   grid-column: 5;
@@ -958,10 +1031,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-
-.nova .text p {
-  line-height: 18px;
 }
 
 /* MEDIA QUERIES FOR LATEST FUNDING */
@@ -1059,12 +1128,6 @@ main {
 }
 
 /* Latest-section */
-.latest-section .header a,
-i {
-  font-family: "Avalon", sans-serif;
-  font-size: 25px;
-  color: red;
-}
 
 .latest-section .header a:hover {
   color: black;
@@ -1091,13 +1154,6 @@ i {
 
 .latest-section .image-link:hover {
   text-decoration: underline;
-}
-
-.latest-section h6 {
-  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .latest-section .latest h2 {
@@ -1132,9 +1188,25 @@ i {
   padding: 3px;
 }
 
+.latest-section img {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.footer-two img {
+  height: 10px;
+  width: 40px;
+}
+
 .latest-section .latest img {
   height: 100%;
   width: 100%;
+}
+
+.footer-icons li,
+.footer-links li {
+  display: inline-block;
 }
 
 .latest-section .latest-list ul li {
@@ -1145,18 +1217,17 @@ i {
   border-bottom: 1px solid lightgrey;
 }
 
-.latest-section .latest-list ul li a {
-  color: grey;
+.latest-deals .deals-header a:hover {
+  color: black;
+}
+
+.latest-deals .text a:hover {
+  color: rgb(255, 68, 34);
+  text-decoration: underline;
 }
 
 .latest-section .latest-list ul li a:hover {
   color: black;
-}
-
-.latest-section img {
-  width: 100%;
-  height: 100%;
-  z-index: -1;
 }
 
 .image-text {
@@ -1767,42 +1838,9 @@ i {
 }
 
 /* latest deals */
-.latest-deals .deals-header a {
-  color: rgb(255, 68, 34);
-  font-family: Avalon, sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.latest-deals .deals-header i {
-  color: rgb(255, 68, 34);
-}
-
-.latest-deals .deals-header a:hover {
-  color: black;
-}
 
 .latest-deals .deals-header i:hover {
   color: black;
-}
-
-.latest-deals .text a {
-  font-size: 16px;
-  font-weight: 700;
-  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
-  color: black;
-}
-
-.latest-deals .text a:hover {
-  color: rgb(255, 68, 34);
-  text-decoration: underline;
-}
-
-.latest-deals h6 {
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
-  color: rgb(85, 85, 85);
 }
 
 .latest-deals h6 span {
@@ -2139,43 +2177,21 @@ footer {
   text-align: center;
 }
 
+.footer-one {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 70% 30%;
+}
+
 footer .footer-one {
   background-color: rgb(19, 19, 19);
   height: 150px;
 }
 
-.footer-icons li,
-.footer-links li {
-  display: inline-block;
-}
-
-.footer-icons li a {
-  background-color: rgb(51, 51, 51);
-  border-radius: 50%;
-  height: 45px;
-  width: 45px;
-  padding: 15px;
-  display: block;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.footer-icons i {
-  color: rgb(255, 255, 255);
-}
-
-.footer-two p,
-a {
-  color: rgb(169, 169, 169);
-  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
-  font-size: 12px;
-}
-
-.footer-links a {
-  color: rgb(169, 169, 169);
-  font-family: "Shentox", sans-serif;
-  font-size: 13px;
-  font-weight: 200;
+.footer-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .footer-two {
@@ -2183,19 +2199,8 @@ footer .footer-two {
   height: 100px;
 }
 
-.footer-two img {
-  height: 10px;
-  width: 40px;
-}
-
 .footer-two .heart {
   color: red;
-}
-
-.footer-one {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 70% 30%;
 }
 
 .footer-one .footer-icons {
@@ -2212,12 +2217,6 @@ footer .footer-two {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-}
-
-.footer-two {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @media only screen and (max-width: 767px) {
