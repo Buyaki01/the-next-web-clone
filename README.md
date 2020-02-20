@@ -10,8 +10,6 @@ This project consists of replicating the <a href="https://thenextweb.com">The Ne
 - CSS
 #### and deployed to Github
 
-![demopage]()
-
 ## Live Demo
 
 [Live Demo](https://raw.githack.com/Buyaki01/the-next-web-clone/feature/index.html)
