@@ -12,8 +12,6 @@ li {
   list-style-type: none;
 }
 
-/* NAV BAR */
-
 nav {
   width: 100%;
   height: 130px;
@@ -112,7 +110,6 @@ a {
   color: rgb(0, 0, 0);
 }
 
-/* Media query for nav-bar */
 @media only screen and (max-width: 767px) {
   .nav-logo img {
     height: 100%;
@@ -123,12 +120,10 @@ a {
     height: 115px;
   }
 
-  /* nav bar 1 */
   .nav-bar .nav-bar1 {
     display: none;
   }
 
-  /* nav bar 2 */
   .nav-bar .nav-bar2 {
     display: none;
   }
@@ -168,7 +163,6 @@ a {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Nav bar 1 */
   .nav-bar1 .nav-bar1-2 {
     display: none;
   }
@@ -180,8 +174,6 @@ a {
 
   .nav-bar1 .nav-bar1-1 {
     display: flex;
-
-    /* justify-content: flex-end; */
     align-items: center;
     flex-wrap: nowrap;
     margin-left: 65px;
@@ -193,7 +185,6 @@ a {
     font-size: 12px;
   }
 
-  /* nav bar 2 */
   .nav-bar .nav-bar2 {
     display: flex;
     justify-content: space-between;
@@ -214,23 +205,20 @@ a {
   }
 }
 
-/* MAIN CONTENT */
-
 main {
   width: 100%;
   margin-top: 120px;
 }
 
-/* TOP GRID */
-
 .cover {
   display: block;
   height: 100%;
-  background-image: linear-gradient(
-    170deg,
-    rgb(207, 109, 102) 33%,
-    rgba(0, 212, 255, 0) 67%
-  );
+  background-image:
+    linear-gradient(
+      170deg,
+      rgb(207, 109, 102) 33%,
+      rgba(0, 212, 255, 0) 67%
+    );
   padding: 20px;
 }
 
@@ -239,19 +227,22 @@ main {
 }
 
 .articles-one {
-  background-image: linear-gradient(rgba(182, 182, 34, 0.034), rgb(0, 0, 0)),
+  background-image:
+    linear-gradient(rgba(182, 182, 34, 0.034), rgb(0, 0, 0)),
     url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/05/Facebook-Dating-796x417.jpg);
 }
 
 .articles-two {
-  background-image: linear-gradient(rgba(211, 211, 211, 0.034), rgb(0, 0, 0)),
+  background-image:
+    linear-gradient(rgba(211, 211, 211, 0.034), rgb(0, 0, 0)),
     url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Redbox-Free-Live-TV-796x417.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .articles-three {
-  background-image: linear-gradient(rgba(211, 211, 211, 0.034), rgb(0, 0, 0)),
+  background-image:
+    linear-gradient(rgba(211, 211, 211, 0.034), rgb(0, 0, 0)),
     url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FUntitled-design-19.png&signature=3e2100e5eac8f91ddbf95aed3ffa27e7);
   background-position: center;
   background-size: cover;
@@ -333,8 +324,6 @@ main {
   align-items: center;
   font-size: 10px;
 }
-
-/* MEDIA QUERY FOR TOP GRID SECTION */
 
 @media only screen and (max-width: 767px) {
   .articles {
@@ -423,8 +412,6 @@ main {
     margin-top: 100px;
   }
 }
-
-/* LATEST NEWS SECTION */
 
 .latest-news img {
   height: 150px;
@@ -586,8 +573,6 @@ i {
   font-size: 10px;
 }
 
-/* MEDIA QUERY FOR LATEST NEWS */
-
 @media only screen and (max-width: 767px) {
   .latest-news img {
     height: 75px;
@@ -729,8 +714,6 @@ i {
     font-size: 10px;
   }
 }
-
-/* LATEST FUNDING SECTION */
 
 .latest-funding .funding-title p:hover {
   color: black;
@@ -1029,8 +1012,6 @@ i {
   justify-content: space-around;
 }
 
-/* MEDIA QUERIES FOR LATEST FUNDING */
-
 @media only screen and (max-width: 767px) {
   #border {
     border: none;
@@ -1123,8 +1104,6 @@ i {
   }
 }
 
-/* Latest-section */
-
 .latest-section .header a:hover {
   color: black;
 }
@@ -1144,7 +1123,7 @@ i {
   font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
   font-size: 20px;
   font-weight: 700;
-  color: white; /* set color to white after doing background image */
+  color: white;
   line-height: 22px;
 }
 
@@ -1171,7 +1150,6 @@ i {
   text-decoration: underline;
 }
 
-/* Changes I made */
 .latest {
   background-color: rgb(255, 244, 243);
 }
@@ -1231,7 +1209,6 @@ i {
   padding-left: 20px;
 }
 
-/* Increased the height of the li items to give it more spacing, after adding padding */
 .latest-section {
   display: grid;
   grid-template-columns: 1fr repeat(3, 3fr) 1fr;
@@ -1253,7 +1230,6 @@ i {
   grid-row: 2;
 }
 
-/* Created a sub-grid */
 .latest-section .app-latest {
   grid-column: 2;
   grid-row: 3;
@@ -1276,7 +1252,6 @@ i {
   grid-row: 2;
 }
 
-/* Created a sub-grid */
 .latest-section .gear-latest {
   grid-column: 3;
   grid-row: 3;
@@ -1299,7 +1274,6 @@ i {
   grid-row: 2;
 }
 
-/* Created a sub-grid */
 .latest-section .tech-latest {
   grid-column: 4;
   grid-row: 3;
@@ -1322,7 +1296,6 @@ i {
   grid-row: 7;
 }
 
-/* Created a sub-grid */
 .latest-section .creative-latest {
   grid-column: 2;
   grid-row: 8;
@@ -1345,7 +1318,6 @@ i {
   grid-row: 7;
 }
 
-/* Created a sub-grid */
 .latest-section .podium-latest {
   grid-column: 3;
   grid-row: 8;
@@ -1368,7 +1340,6 @@ i {
   grid-row: 7;
 }
 
-/* Created a sub-grid */
 .latest-section .insights-latest {
   grid-column: 4;
   grid-row: 8;
@@ -1391,7 +1362,6 @@ i {
   grid-row: 12;
 }
 
-/* Created a sub-grid */
 .latest-section .launch-latest {
   grid-column: 2;
   grid-row: 13;
@@ -1414,7 +1384,6 @@ i {
   grid-row: 12;
 }
 
-/* Created a sub-grid */
 .latest-section .distract-latest {
   grid-column: 3;
   grid-row: 13;
@@ -1427,7 +1396,6 @@ i {
   grid-row: 14;
 }
 
-/* Media querry for the latest-section */
 @media only screen and (max-width: 767px) {
   .latest-section {
     display: grid;
@@ -1447,7 +1415,6 @@ i {
     grid-row: 2;
   }
 
-  /* Created a sub-grid */
   .latest-section .app-latest {
     grid-column: 1;
     grid-row: 3;
@@ -1471,7 +1438,6 @@ i {
     grid-row: 7;
   }
 
-  /* Created a sub-grid */
   .latest-section .gear-latest {
     grid-column: 1;
     grid-row: 8;
@@ -1495,7 +1461,6 @@ i {
     grid-row: 12;
   }
 
-  /* Created a sub-grid */
   .latest-section .tech-latest {
     grid-column: 1;
     grid-row: 13;
@@ -1519,7 +1484,6 @@ i {
     grid-row: 17;
   }
 
-  /* Created a sub-grid */
   .latest-section .creative-latest {
     grid-column: 1;
     grid-row: 18;
@@ -1543,7 +1507,6 @@ i {
     grid-row: 22;
   }
 
-  /* Created a sub-grid */
   .latest-section .podium-latest {
     grid-column: 1;
     grid-row: 23;
@@ -1567,7 +1530,6 @@ i {
     grid-row: 27;
   }
 
-  /* Created a sub-grid */
   .latest-section .insights-latest {
     grid-column: 1;
     grid-row: 28;
@@ -1591,7 +1553,6 @@ i {
     grid-row: 32;
   }
 
-  /* Created a sub-grid */
   .latest-section .launch-latest {
     grid-column: 1;
     grid-row: 33;
@@ -1615,7 +1576,6 @@ i {
     grid-row: 37;
   }
 
-  /* Created a sub-grid */
   .latest-section .distract-latest {
     grid-column: 1;
     grid-row: 38;
@@ -1634,7 +1594,7 @@ i {
   .latest-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40px 350px 100px 230px 20px 40px 350px 100px 230px 20px 40px 350px 100px 230px 20px 40px 350px 100px 230px 20px;
+    grid-template-rows: 40px 250px 100px 230px 20px 40px 250px 100px 230px 20px 40px 250px 100px 230px 20px 40px 250px 100px 230px 20px;
     padding-left: 20px;
     padding-right: 20px;
     grid-column-gap: 20px;
@@ -1650,7 +1610,6 @@ i {
     grid-row: 2;
   }
 
-  /* Created a sub-grid */
   .latest-section .app-latest {
     grid-column: 1;
     grid-row: 3;
@@ -1674,7 +1633,6 @@ i {
     grid-row: 2;
   }
 
-  /* Created a sub-grid */
   .latest-section .gear-latest {
     grid-column: 2;
     grid-row: 3;
@@ -1698,7 +1656,6 @@ i {
     grid-row: 7;
   }
 
-  /* Created a sub-grid */
   .latest-section .tech-latest {
     grid-column: 1;
     grid-row: 8;
@@ -1722,7 +1679,6 @@ i {
     grid-row: 7;
   }
 
-  /* Created a sub-grid */
   .latest-section .creative-latest {
     grid-column: 2;
     grid-row: 8;
@@ -1746,7 +1702,6 @@ i {
     grid-row: 12;
   }
 
-  /* Created a sub-grid */
   .latest-section .podium-latest {
     grid-column: 1;
     grid-row: 13;
@@ -1770,7 +1725,6 @@ i {
     grid-row: 12;
   }
 
-  /* Created a sub-grid */
   .latest-section .insights-latest {
     grid-column: 2;
     grid-row: 13;
@@ -1794,7 +1748,6 @@ i {
     grid-row: 17;
   }
 
-  /* Created a sub-grid */
   .latest-section .launch-latest {
     grid-column: 1;
     grid-row: 18;
@@ -1818,7 +1771,6 @@ i {
     grid-row: 17;
   }
 
-  /* Created a sub-grid */
   .latest-section .distract-latest {
     grid-column: 2;
     grid-row: 18;
@@ -1832,8 +1784,6 @@ i {
     grid-row: 19;
   }
 }
-
-/* latest deals */
 
 .latest-deals .deals-header i:hover {
   color: black;
@@ -1945,8 +1895,6 @@ i {
   align-items: center;
   font-size: 10px;
 }
-
-/* MEDIA QUERIES FOR LATEST DEALS */
 
 @media only screen and (max-width: 767px) {
   .latest-deals img,
@@ -2166,7 +2114,6 @@ i {
   }
 }
 
-/* FOOTER */
 footer {
   width: 100%;
   height: 250px;
