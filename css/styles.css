@@ -226,12 +226,11 @@ main {
 .cover {
   display: block;
   height: 100%;
-  background-image:
-    linear-gradient(
-      170deg,
-      rgb(207, 109, 102) 33%,
-      rgba(0, 212, 255, 0) 67%
-    );
+  background-image: linear-gradient(
+    170deg,
+    rgb(207, 109, 102) 33%,
+    rgba(0, 212, 255, 0) 67%
+  );
   padding: 20px;
 }
 
@@ -240,22 +239,19 @@ main {
 }
 
 .articles-one {
-  background-image:
-    linear-gradient(rgba(182, 182, 34, 0.034), rgb(0, 0, 0)),
+  background-image: linear-gradient(rgba(182, 182, 34, 0.034), rgb(0, 0, 0)),
     url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/05/Facebook-Dating-796x417.jpg);
 }
 
 .articles-two {
-  background-image:
-    linear-gradient(rgba(211, 211, 211, 0.034), rgb(0, 0, 0)),
+  background-image: linear-gradient(rgba(211, 211, 211, 0.034), rgb(0, 0, 0)),
     url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Redbox-Free-Live-TV-796x417.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .articles-three {
-  background-image:
-    linear-gradient(rgba(211, 211, 211, 0.034), rgb(0, 0, 0)),
+  background-image: linear-gradient(rgba(211, 211, 211, 0.034), rgb(0, 0, 0)),
     url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FUntitled-design-19.png&signature=3e2100e5eac8f91ddbf95aed3ffa27e7);
   background-position: center;
   background-size: cover;
