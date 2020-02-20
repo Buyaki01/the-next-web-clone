@@ -260,16 +260,16 @@ main {
   color: rgb(255, 255, 255);
 }
 
-.articles-one .articles-text .articles-title {
+.articles .articles-title {
   font-family: "Avalon", sans-serif;
-  font-size: 35px;
+  font-size: 18px;
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
 
-.articles .articles-title {
+.articles-one .articles-text .articles-title {
   font-family: "Avalon", sans-serif;
-  font-size: 18px;
+  font-size: 35px;
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
@@ -428,10 +428,28 @@ main {
   width: 250px;
 }
 
+.latest-news p {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  color: black;
+  font-weight: 700px;
+  margin-right: 18px;
+}
+
+.latest-funding .funding-title p {
+  font-family: "Avalon", sans-serif;
+  font-size: 25px;
+  color: red;
+}
+
 .latest-news .news-title p {
   font-family: "Avalon", sans-serif;
   font-size: 25px;
   color: red;
+}
+
+.elliptic .text p {
+  line-height: 18px;
 }
 
 .latest-news .news-title p:hover {
@@ -444,14 +462,6 @@ main {
 
 .latest-news .news-title .fa {
   font-size: 17px;
-}
-
-.latest-news p {
-  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
-  font-size: 15px;
-  color: black;
-  font-weight: 700px;
-  margin-right: 18px;
 }
 
 .latest-news small {
@@ -676,11 +686,6 @@ main {
 }
 
 /* LATEST FUNDING SECTION */
-.latest-funding .funding-title p {
-  font-family: "Avalon", sans-serif;
-  font-size: 25px;
-  color: red;
-}
 
 .latest-funding .funding-title p:hover {
   color: black;
@@ -694,10 +699,6 @@ main {
   font-size: 17px;
 }
 
-.latest-funding .funding-links a:hover {
-  color: black;
-}
-
 .latest-funding .funding-links a {
   font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
   font-size: 15px;
@@ -705,6 +706,10 @@ main {
   font-weight: 700px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.latest-funding .funding-links a:hover {
+  color: black;
 }
 
 #border {
@@ -819,10 +824,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-
-.elliptic .text p {
-  line-height: 18px;
 }
 
 .latest-funding .block {
